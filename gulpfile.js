@@ -264,3 +264,17 @@ exports.default = watch;
 // 1. B папку с новым проектом переносим файлы gulpfile.js, package.json и папку src;
 // 2. B консоли пишем npm install (установятся все нужные модули);
 // 3. Соблюдаем файловую структуру или в сборках подправляем пути "откуда берем"/"куда кладем" файлы.
+
+// var ghPages = require("gulp-gh-pages");
+
+// gulp.task("deploy", function () {
+//   return gulp.src("./dist/**/*").pipe(ghPages());
+// });
+
+// const gulp = require('gulp');
+// const ghPages = require('gulp-gh-pages');
+
+// gulp.task('deploy', function() {
+//     return gulp.src('./dist/**/*')
+//         .pipe(ghPages());
+// });

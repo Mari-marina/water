@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,45 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>gulp project</title>
 </head>
-<body>
-<header class="header">
-    <div class="header_nav nav">
-        <img class="logo" src="" alt="logo">
-            <ul class="nav_list">
-                <li class="nav_item">Новым клиентам</li>
-                <li class="nav_item">Преимущества</li>
-                <li class="nav_item">Aкции</li>
-                <li class="nav_item">Вопросы</li>
-                <li class="nav_item"> <a href="tel:+74951518763" class="nav_phone">+7 (495) 151-87-63</a> </li>
-            </ul>
-            <button class="nav_button">Быстрый заказ</button>
-    </div>
-</header>
 
+<body>
+    <main class="main">
+        <div class="cotainer">
+            <header class="header">
+                <div class="header__nav nav">
+                    <img class="logo" src="./assets/images/logo.svg" alt="logo">
+                    <ul class="nav__list">
+                        <li class="nav__item">Новым клиентам</li>
+                        <li class="nav__item">Преимущества</li>
+                        <li class="nav__item">Aкции</li>
+                        <li class="nav__item">Вопросы</li>
+                        <li class="nav__item">
+                            <div class="nav__item__wrap">
+                                <a href="tel:+74951518763" class="nav__phone">+7 (495) 151-87-63</a>
+                                <span>Пн.- Пт.: 08.00-21.00
+                                </span><span> Сб. - Вс.: 09.00-21.00</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="nav__button">Быстрый заказ</button>
+                </div>
+            </header>
+        </div>
+        <div class="main__wrapper">
+            <div class="main__wrap">
+                <h1 class="main__title"><span class="main__title_small">ДОСТАВКА ВОДЫ В МОСКВЕ И ОБЛАСТИ</span>
+                    <span class="main__title_big">ДЛЯ НОВЫХ КЛИЕНТОВ:</span>
+                    <span class="main__title_small-blue">ВОДА, ПОМПА И ДОСТАВКА</span>
+                    <span class="main__title_orange">БЕСПЛАТНО!</span></h1>
+                    <button class="main__button">Заказать Воду</button>
+            </div>
+            <div>
+                <img src="./assets/images/main.png" alt="">
+            </div>
+        </div>
+    </main>
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

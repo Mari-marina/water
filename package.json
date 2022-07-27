@@ -27,7 +27,6 @@
     "IE 10"
   ],
   "main": "gulpfile.js",
-  "dependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
