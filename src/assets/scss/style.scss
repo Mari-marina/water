@@ -1,2 +1,11 @@
 
-@import './../scss/base/_normalize'
+@import './../scss/base/_normalize';
+@import './../scss/base/fonts';
+@import './../scss/base/tipography';
+
+@import './../scss/components/button';
+@import './../scss/variables/_mixins';
+@import './../scss/variables/_var';
+
+@import './../scss/sections/main';
+@import './../scss/sections/nav';
