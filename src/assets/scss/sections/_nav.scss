@@ -1,1 +1,105 @@
 @import './../variables/_mixins';
+
+.nav {
+  padding-top: 44px;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media all and (max-width: 980px) {
+      padding-top: 40px;
+      max-width: initial;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background: #f0fcfd;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease;
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+      -webkit-transition: transform 0.5s ease;
+      -moz-transition: transform 0.5s ease;
+      -ms-transition: transform 0.5s ease;
+      -o-transition: transform 0.5s ease;     
+    }
+    &.active {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      z-index: 10;
+    }
+  &__item {
+    font-family: 'Roboto';
+    @include text(15px, 500, 18px, #272674);
+  }
+  &__item__wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrap-tel {
+    display: flex;
+    align-items: center;
+  }
+  &__icon-tel {
+    margin-right: 15px;
+  }
+  &__button {
+    width: 179px;
+height: 40px;
+@include text(16px, 700, 22px, #FFFFFF);
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item:not(:last-child) {
+    margin-right: 60px;
+    @media all and (max-width: 1146px) {
+      margin-right: 40px;
+    }
+    @media all and (max-width: 1060px) {
+      margin-right: 20px;
+    }
+  }
+  &__phone{
+    @include text(16px, 900, 22px, #272674);
+    text-decoration: none;
+  }
+  &__span {
+    @include text(12px, 400, 16px, #121212);
+    margin-top: 5px;
+  }
+  &__mobile{
+    display: none;
+    @media all and (max-width: 980px)  {
+      display: flex;
+      align-items: center;
+    margin-top: 20px;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 20px;
+  top: 25px;
+  background: url(./../images/burger.svg) no-repeat center;
+  cursor: pointer;
+  transition: 0.2s;
+  background-size: cover;
+  z-index: 101;
+  @media all and (max-width: 980px)  {
+    display: block;
+  }
+}

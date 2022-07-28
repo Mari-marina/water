@@ -1,1 +1,8 @@
 @import './../variables/_mixins';
+
+.main {
+  &__img {
+    max-width: 740px;
+    width: 100%;
+  }
+}

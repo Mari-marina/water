@@ -362,6 +362,9 @@ h4,
 li {
   font-family: 'Nunito Sans';
 }
+li {
+  list-style-type: none;
+}
 
 body {
   margin: 0;
@@ -374,4 +377,14 @@ body {
   padding: 0;
   margin: 0;
   /* border: 1px solid red; */
+}
+
+.container {
+  max-width: 1284px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media all and (max-width: 800px) {
+    padding: 0 10px;
+  }
 }
