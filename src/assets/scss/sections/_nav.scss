@@ -79,6 +79,7 @@ height: 40px;
   }
   &__mobile{
     display: none;
+    // position: fixed;
     @media all and (max-width: 980px)  {
       display: flex;
       align-items: center;

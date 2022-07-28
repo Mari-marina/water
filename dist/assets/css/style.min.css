@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -358,6 +359,67 @@ button {
 .main__img {
   max-width: 740px;
   width: 100%; }
+
+.main__wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  justify-content: center; }
+
+.main__wrapper {
+  padding-top: 60px;
+  background: url(./../images/bacg.svg) no-repeat center;
+  background-position: left bottom;
+  /* Положение фона */
+  background-repeat: no-repeat; }
+
+.main__block {
+  display: flex;
+  justify-content: center; }
+
+.main__button {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 20px;
+  color: #ffff;
+  width: 206px;
+  height: 50px;
+  padding-left: 22px;
+  position: relative; }
+
+.main__button::before {
+  content: "";
+  position: absolute;
+  background: url(./../images/drop.svg) no-repeat center;
+  width: 40px;
+  height: 40px;
+  top: 4px;
+  left: 4px; }
+
+.main__title_small {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 22px;
+  color: #F1A039; }
+
+.main__title_big {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 57px;
+  color: #2D3074; }
+
+.main__title_small-blue {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+  color: #2D3074; }
+
+.main__title_orange {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 49px;
+  color: #F1A039;
+  font-family: 'Roboto'; }
 
 .nav {
   padding-top: 44px;
