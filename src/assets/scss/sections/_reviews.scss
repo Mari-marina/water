@@ -4,4 +4,27 @@
   &__title {
     padding: 240px 0 41px;
   }
+  &__wrapper {
+    max-width: 400px;
+    background: #55B2F3;
+    border-radius: 42px;
+  }
+  &__text_top,
+  &__text_bottom,
+  &__span {
+    color: #FFFFFF;
+  }
+  &__wrap {
+    padding: 36px 30px;
+  }
+  &__text_top {
+    margin-bottom: 15px;
+  }
+  &__text_bottom {
+    margin: 15px 0;
+  }
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+  }
 }

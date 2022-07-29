@@ -1,0 +1,40 @@
+
+
+.questions {
+  &__title {
+    padding: 113px 0 48px;
+  }
+}
+
+details > summary {
+  @include text(24px, 400, 33px, #272E59);
+  list-style-type: none;
+  font-family: 'Nunito Sans';
+  border-bottom: solid 2px #272674;
+  margin-top: 2px;
+  padding: 25px 0 25px 60px;
+  display: flex;
+  justify-content: space-between;
+  @media all and (max-width: 600px) {
+    padding: 10px 20px;
+    };
+  
+}
+
+details > summary:focus {
+  border: solid 2px #F1A039;
+  border-radius: 20px;
+}
+
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  // details[open] {
+  //   img {
+  //     transform: rotate(180deg);
+  //     -webkit-transform: rotate(180deg);
+  //     -moz-transform: rotate(180deg);
+  //     -ms-transform: rotate(180deg);
+  //     -o-transform: rotate(180deg);
+  //   }
+  // }
