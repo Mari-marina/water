@@ -5,4 +5,73 @@
     margin-top: 110px;
     text-align: center;
   }
+  &__wrapper{
+    max-width: 445px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  &__wrapper:first-child {
+    background: #272963;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(./../images/discounts/bottles.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  &__wrapper:nth-child(2) {
+    background: #55B2F3;
+    display: flex;
+    justify-content: center;
+    background-image: url(./../images/discounts/filter.svg);
+    background-repeat: no-repeat;
+    background-size: 41%;
+    margin: 0 12px;
+  }
+  &__wrapper:nth-child(3) {
+    background: #2271C5;
+    background-image: url(./../images/discounts/b3.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: right;
+  }
+  &__wrap__subtitle,
+  &__wrap__text {
+    color: #FFFFFF;
+  }
+  &__wrap {
+    width: 100%;
+  }
+  &__wrap_first {
+    max-width: 150px;
+  }
+  &__wrap_second {
+    max-width: 220px;
+    margin-left: 82px;
+  }
+  &__wrap_third {
+    max-width: 220px;
+    margin-left: 33px;
+  }
+  &__wrap__subtitle {
+    padding-top: 27px;
+  }
+  &__wrap__button {
+    width: 140px;
+    height: 40px;
+    background: #F1A039;
+    border-radius: 42px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+  }
+  &__wrap__text:nth-child(3) {
+    margin: 30px 0 28px;
+  }
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 41px 0 30px;
+  }
+  &__text_bottom {
+    text-align: center;
+  }
 }

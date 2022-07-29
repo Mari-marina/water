@@ -341,6 +341,12 @@ body {
     .container {
       padding: 0 10px; } }
 
+.container_second {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px; }
+
 h2 {
   font-family: 'Nunito Sans';
   font-size: 36px;
@@ -585,6 +591,153 @@ button {
 .discounts__title {
   margin-top: 110px;
   text-align: center; }
+
+.discounts__wrapper {
+  max-width: 445px;
+  width: 100%;
+  border-radius: 40px; }
+
+.discounts__wrapper:first-child {
+  background: #272963;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(./../images/discounts/bottles.png);
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+
+.discounts__wrapper:nth-child(2) {
+  background: #55B2F3;
+  display: flex;
+  justify-content: center;
+  background-image: url(./../images/discounts/filter.svg);
+  background-repeat: no-repeat;
+  background-size: 41%;
+  margin: 0 12px; }
+
+.discounts__wrapper:nth-child(3) {
+  background: #2271C5;
+  background-image: url(./../images/discounts/b3.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: right; }
+
+.discounts__wrap__subtitle, .discounts__wrap__text {
+  color: #FFFFFF; }
+
+.discounts__wrap {
+  width: 100%; }
+
+.discounts__wrap_first {
+  max-width: 150px; }
+
+.discounts__wrap_second {
+  max-width: 220px;
+  margin-left: 82px; }
+
+.discounts__wrap_third {
+  max-width: 220px;
+  margin-left: 33px; }
+
+.discounts__wrap__subtitle {
+  padding-top: 27px; }
+
+.discounts__wrap__button {
+  width: 140px;
+  height: 40px;
+  background: #F1A039;
+  border-radius: 42px;
+  color: #FFFFFF;
+  margin-bottom: 27px; }
+
+.discounts__wrap__text:nth-child(3) {
+  margin: 30px 0 28px; }
+
+.discounts__blocks {
+  display: flex;
+  justify-content: space-between;
+  margin: 41px 0 30px; }
+
+.discounts__text_bottom {
+  text-align: center; }
+
+.request__text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #121212; }
+
+.request__title {
+  padding-top: 140px; }
+
+.request__input {
+  border: 1.5px solid #FFFFFF;
+  border-radius: 42px;
+  width: 296px;
+  height: 50px;
+  background: #2271C5;
+  color: #FFFFFF;
+  text-align: center; }
+
+.request__btn {
+  width: 250px;
+  height: 50px;
+  background: #F1A039;
+  padding-left: 22px;
+  position: relative; }
+
+.request__btn::before {
+  content: "";
+  position: absolute;
+  background: url(./../images/dropOrange.svg) no-repeat center;
+  width: 40px;
+  height: 40px;
+  top: 4px;
+  left: 4px; }
+
+.request__form_first {
+  max-width: 916px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 36px; }
+
+.request__form_second {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 32px; }
+
+.request__radioButton {
+  margin-right: 14px; }
+
+input::placeholder {
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FFFFFF;
+  font-family: 'Nunito Sans'; }
+
+.service__title {
+  padding-top: 140px;
+  max-width: 596px;
+  width: 100%;
+  margin: 0 auto; }
+
+.service__block {
+  max-width: 190px;
+  width: 100%; }
+
+.service__wrap {
+  display: flex;
+  align-items: center; }
+
+.service__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 41px; }
 
 /* Slider */
 .slick-slider {

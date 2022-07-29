@@ -1,0 +1,58 @@
+@import './../variables/_mixins';
+
+.request {
+  &__text {
+    text-align: center;
+    @include text(18px, 400, 22px, #121212);
+  }
+  &__title {
+    padding-top: 140px;
+  }
+  &__input {
+    border: 1.5px solid #FFFFFF;
+border-radius: 42px;
+width: 296px;
+height: 50px;
+background: #2271C5;
+color: #FFFFFF;
+text-align: center;
+  }
+  &__btn{
+    width: 250px;
+    height: 50px;
+    background: #F1A039;
+    padding-left: 22px;
+    position: relative;
+  }
+  &__btn::before {
+    content: "";
+    position: absolute;
+    background: url(./../images/dropOrange.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    top: 4px;
+    left: 4px;
+  }
+  &__form_first {
+    max-width: 916px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 36px;
+  }
+  &__form_second {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 32px;
+  }
+  &__radioButton {
+    margin-right: 14px;
+  }
+}
+input::placeholder {
+  opacity: 0.5;
+  @include text(16px, 400, 22px, #FFFFFF);
+  font-family: 'Nunito Sans';
+}
