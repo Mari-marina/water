@@ -817,6 +817,81 @@ details > summary:focus {
 details > summary::-webkit-details-marker {
   display: none; }
 
+.order__title {
+  padding: 226px 0 36px; }
+
+.order__input {
+  border: 1.5px solid #FFFFFF;
+  border-radius: 42px;
+  width: 296px;
+  height: 50px;
+  background: #2271C5;
+  color: #FFFFFF;
+  text-align: center; }
+
+.order__btn {
+  width: 250px;
+  height: 50px;
+  background: #F1A039;
+  padding-left: 22px;
+  position: relative; }
+
+.order__btn::before {
+  content: "";
+  position: absolute;
+  background: url(./../images/dropOrange.svg) no-repeat center;
+  width: 40px;
+  height: 40px;
+  top: 4px;
+  left: 4px; }
+
+.order__form_first {
+  max-width: 916px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 36px; }
+
+.order__form_second {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 75px;
+  margin: 0 auto;
+  padding-top: 32px; }
+
+.order__radioButton {
+  margin-right: 14px; }
+
+.qualities__title {
+  padding: 165px 0 68px; }
+
+.qualities__block {
+  max-width: 290px;
+  width: 100%; }
+
+.qualities__wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+.qualities__blocks {
+  display: flex;
+  justify-content: space-between; }
+
+.qualities__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #121212; }
+
+.qualities__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #121212; }
+
 /* Slider */
 .slick-slider {
   position: relative;
