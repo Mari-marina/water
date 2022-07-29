@@ -1,9 +1,14 @@
 @import './../variables/_mixins';
 
 .main {
+  &__image {
+    overflow: hidden;
+  }
   &__img {
     max-width: 740px;
     width: 100%;
+    position: relative;
+    left: 112px;
   }
   &__wrap {
     display: flex;

@@ -356,9 +356,14 @@ button {
   background: #262A66;
   font-family: Nunito Sans; }
 
+.main__image {
+  overflow: hidden; }
+
 .main__img {
   max-width: 740px;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  left: 112px; }
 
 .main__wrap {
   display: flex;
@@ -527,5 +532,182 @@ button {
 .production__video {
   max-width: 1159px;
   width: 100%; }
+
+.benefits__title {
+  text-align: center;
+  padding-top: 71px;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  color: #121212; }
+
+.benefits__text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #121212;
+  text-align: center; }
+
+.benefits__wrap {
+  background: url(./../images/benefits/1.svg) no-repeat center;
+  max-width: 400px;
+  width: 100%;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.benefits__wrap__subtitle {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 322px;
+  width: 100%; }
+
+.benefits__wrap_round__img {
+  max-width: 390px;
+  width: 100%;
+  position: absolute;
+  top: -74px; }
+
+.benefits__wrap_round {
+  position: relative; }
+
+.benefits__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 100px; }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+.slick-arrow {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border: none; }
+  @media all and (max-width: 770px) {
+    .slick-arrow {
+      width: 40px;
+      height: 40px; } }
+
+.slick-arrow:hover {
+  background: #53CD8B;
+  border: none; }
+
+button > .slick-prev,
+button > .slick-next {
+  position: absolute; }
+
+.slick-prev {
+  position: absolute;
+  top: -88px;
+  right: 88px; }
+  @media all and (max-width: 770px) {
+    .slick-prev {
+      top: 456px; } }
+  @media all and (max-width: 450px) {
+    .slick-prev {
+      right: 76px; } }
+  @media all and (max-width: 400px) {
+    .slick-prev {
+      top: 438px; } }
+
+.slick-next {
+  position: absolute;
+  top: -88px;
+  right: 0px; }
+  @media all and (max-width: 770px) {
+    .slick-next {
+      top: 456px; } }
+  @media all and (max-width: 400px) {
+    .slick-next {
+      top: 438px; } }
+
+.slick-slide {
+  margin: 0 20px; }
+  @media all and (max-width: 400px) {
+    .slick-slide {
+      margin: 0 5px; } }
+
+.slider-track {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.slider-item div {
+  max-width: 100%; }
 
 /*# sourceMappingURL=style.min.css.map */
