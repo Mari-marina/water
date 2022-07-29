@@ -1,0 +1,8 @@
+@import './../variables/_mixins';
+
+.discounts {
+  &__title {
+    margin-top: 110px;
+    text-align: center;
+  }
+}
