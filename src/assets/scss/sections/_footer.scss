@@ -1,0 +1,27 @@
+@import './../variables/_mixins';
+
+.footer {
+  background: #262A66;
+  margin-top: 85px;
+  &__wrapper {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0 45px;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__list_center {
+    text-align: center;
+    padding-top: 36px;
+  }
+  &__list_right {
+    text-align: right;
+    padding-top: 32px;
+  }
+  &__item:nth-child(3) {
+    margin-top: 10px;
+    
+  }
+}

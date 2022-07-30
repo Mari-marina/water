@@ -1030,6 +1030,25 @@ details > summary::-webkit-details-marker {
 .certificates__wrapper_right {
   margin: 45px; }
 
+.footer {
+  background: #262A66;
+  margin-top: 85px; }
+  .footer__wrapper {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0 45px; }
+  .footer__link {
+    text-decoration: none; }
+  .footer__list_center {
+    text-align: center;
+    padding-top: 36px; }
+  .footer__list_right {
+    text-align: right;
+    padding-top: 32px; }
+  .footer__item:nth-child(3) {
+    margin-top: 10px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
