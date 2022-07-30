@@ -390,29 +390,52 @@ button {
 
 .main__image {
   overflow: hidden; }
+  @media all and (max-width: 880px) {
+    .main__image {
+      overflow: inherit; } }
 
 .main__img {
   max-width: 740px;
   width: 100%;
   position: relative;
   left: 112px; }
+  @media all and (max-width: 980px) {
+    .main__img {
+      left: 30px; } }
+  @media all and (max-width: 880px) {
+    .main__img {
+      left: 0;
+      top: 33px; } }
 
 .main__wrap {
   display: flex;
   flex-direction: column;
   max-width: 50%;
   justify-content: center; }
+  @media all and (max-width: 880px) {
+    .main__wrap {
+      align-items: center; } }
 
 .main__wrapper {
-  padding-top: 60px;
-  background: url(./../images/bacg.svg) no-repeat center;
-  background-position: left bottom;
-  /* Положение фона */
-  background-repeat: no-repeat; }
+  margin-top: 60px;
+  background-image: url(./../images/bacg.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 100%; }
+  @media all and (max-width: 880px) {
+    .main__wrapper {
+      background-image: url(./../images/backg-daptive.svg);
+      background-size: 100% 50%;
+      margin-top: -60px; } }
 
 .main__block {
   display: flex;
   justify-content: center; }
+  @media all and (max-width: 880px) {
+    .main__block {
+      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
+      display: flex; } }
 
 .main__button {
   font-size: 15px;
@@ -433,23 +456,45 @@ button {
   top: 4px;
   left: 4px; }
 
+@media all and (max-width: 880px) {
+  .main__title {
+    text-align: center; } }
+
 .main__title_small {
   font-size: 16px;
   font-weight: 900;
   line-height: 22px;
   color: #F1A039; }
+  @media all and (max-width: 620px) {
+    .main__title_small {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      color: #F1A039; } }
 
 .main__title_big {
   font-size: 42px;
   font-weight: 800;
   line-height: 57px;
   color: #2D3074; }
+  @media all and (max-width: 620px) {
+    .main__title_big {
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 30px;
+      color: #2D3074; } }
 
 .main__title_small-blue {
   font-size: 24px;
   font-weight: 800;
   line-height: 33px;
   color: #2D3074; }
+  @media all and (max-width: 620px) {
+    .main__title_small-blue {
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 30px;
+      color: #2D3074; } }
 
 .main__title_orange {
   font-size: 42px;
@@ -457,6 +502,12 @@ button {
   line-height: 49px;
   color: #F1A039;
   font-family: 'Roboto'; }
+  @media all and (max-width: 620px) {
+    .main__title_orange {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 40px;
+      color: #F1A039; } }
 
 .nav {
   padding-top: 44px;
@@ -499,6 +550,9 @@ button {
     font-weight: 500;
     line-height: 18px;
     color: #272674; }
+    @media all and (max-width: 980px) {
+      .nav__item {
+        font-size: 24px; } }
   .nav__item__wrap {
     display: flex;
     flex-direction: column; }
@@ -517,6 +571,13 @@ button {
   .nav__list {
     display: flex;
     align-items: center; }
+    @media all and (max-width: 980px) {
+      .nav__list {
+        flex-direction: column;
+        max-height: 500px;
+        height: 100%;
+        justify-content: space-between;
+        padding: 30px; } }
   .nav__item:not(:last-child) {
     margin-right: 60px; }
     @media all and (max-width: 1146px) {
