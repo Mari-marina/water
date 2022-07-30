@@ -15,9 +15,15 @@
     display: flex;
     align-items: center;
   }
+  &__wrap:not(:last-child) {
+    margin-bottom: 66px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-around;
     margin-top: 41px;
+    @media all and (max-width: 900px) {
+      flex-wrap: wrap;
+    }
   }
 }
