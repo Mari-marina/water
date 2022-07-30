@@ -1,6 +1,92 @@
+@import './../variables/_mixins';
 .production{
   &__video {
    max-width: 1159px;
    width: 100%;
+   padding-top: 62px;
   }
+  &__title {
+    color: #272674;
+    text-align: center;
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 184px;
+  }
+  &__subtitle_orange {
+    @include text(48px, 800, 65px, #F1A039);
+    font-family: 'Nunito Sans';
+  }
+  &__text {
+    @include text(18px, 400, 25px, #272674);
+    width: 100%;
+    text-align: center;
+  }
+  &__text_left {
+    max-width: 270px;
+  }
+  &__text_center,
+  &__text_right {
+    max-width: 215px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1085px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  &__subtitle {
+    @include text(24px, 700, 32px, #272674);
+    font-family: 'Nunito Sans';
+    margin-top: 80px;
+  }
+  &__text_bottom {
+    @include text(16px, 400, 22px, #000000);
+    margin: 13px 0 25px;
+  }
+  &__input {
+    border: 1.5px solid #121212;
+border-radius: 42px;
+width: 296px;
+height: 50px;
+background: #FFFFFF;
+color: #121212;
+text-align: center;
+margin-right: 10px;
+  }
+  &__btn{
+    width: 250px;
+    height: 50px;
+    background: #F1A039;
+    padding-left: 22px;
+    position: relative;
+  }
+  &__btn::before {
+    content: "";
+    position: absolute;
+    background: url(./../images/dropOrange.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    top: 4px;
+    left: 4px;
+  }
+  &__form {
+    max-width: 923px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.production__inpu>input::placeholder {
+  opacity: 0.5;
+  @include text(16px, 400, 22px, #121212);
+  font-family: 'Nunito Sans';
 }

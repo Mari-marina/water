@@ -1,0 +1,42 @@
+@import './../variables/_mixins';
+
+.certificates {
+  &__wrapper_left {
+    max-width: 496px;
+    width: 100%;
+  }
+  &__title {
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  &__wrapper {
+    background: #55B2F3;
+    border-radius: 42px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 227px;
+  }
+  &__block__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    @include text(18px, 400, 25px, #ffffff);
+    margin-bottom: 29px;
+
+  }
+  &__btn {
+    width: 309px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 42px;
+    color: #121212;
+  }
+  &__wrapper_left {
+    margin: 56px 20px 54px 94px;
+  }
+  &__wrapper_right {
+    margin: 45px;
+  }
+}
