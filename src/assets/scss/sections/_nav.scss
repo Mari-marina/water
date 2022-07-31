@@ -63,6 +63,9 @@ height: 40px;
   &__link {
     @include text(15px, 500, 18px, #272674);
     font-family: 'Roboto';
+    @media all and (max-width: 980px)  {
+      @include text(24px, 500, 18px, #272674);
+    }
   }
   &__link:hover {
     opacity: 0.9;
