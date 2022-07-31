@@ -4,6 +4,9 @@
   &__wrapper_left {
     max-width: 496px;
     width: 100%;
+    @media all and (max-width: 1100px) {
+      max-width: 700px;
+    }
   }
   &__title {
     text-align: left;
@@ -16,6 +19,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 227px;
+    @media all and (max-width: 1100px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
   &__block__wrap {
     display: flex;
@@ -34,9 +41,18 @@
     color: #121212;
   }
   &__wrapper_left {
-    margin: 56px 20px 54px 94px;
+    padding: 56px 20px 54px 94px;
+    @media all and (max-width: 1100px) {
+      padding: 20px 20px 51px;
+    }
   }
   &__wrapper_right {
-    margin: 45px;
+    padding: 45px;
+    @media all and (max-width: 1100px) {
+      padding: 20px;
+    }
+    @media all and (max-width: 700px) {
+      padding: 20px 20px 0;
+    }
   }
 }
