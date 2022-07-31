@@ -60,6 +60,13 @@
 height: 40px;
 @include text(16px, 700, 22px, #FFFFFF);
   }
+  &__link {
+    @include text(15px, 500, 18px, #272674);
+    font-family: 'Roboto';
+  }
+  &__link:hover {
+    opacity: 0.9;
+  }
   &__list {
     display: flex;
     align-items: center;

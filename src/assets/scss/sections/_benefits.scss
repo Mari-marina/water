@@ -5,6 +5,12 @@
     text-align: center;
     padding-top: 71px;
     @include text(36px, 800, 49px, #121212);
+    @media all and (max-width: 880px) {
+      padding-top: 16px;
+    }
+    @media all and (max-width: 680px) {
+      @include text(24px, 700, 32px, #121212);
+    }
   }
   &__text {
     @include text(20px, 700, 27px, #121212);
