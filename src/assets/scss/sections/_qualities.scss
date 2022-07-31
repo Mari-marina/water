@@ -53,4 +53,7 @@
       @include text(16px, 400, 22px, #121212);
     }
   }
+  &__wrapper {
+    margin: 0 auto;
+  }
 }

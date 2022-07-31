@@ -36,8 +36,9 @@
     background-repeat: no-repeat;
     background-size: 50% 100%;
     @media all and (max-width: 880px) {
-      background-image: url(./../images/backg-daptive.svg);
+      background-image: url(./../images/backg-adaptive.svg);
       background-size: 100% 50%;
+      background-position: bottom;
       margin-top: -60px;
     }
   }

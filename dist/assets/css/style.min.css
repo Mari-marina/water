@@ -350,12 +350,6 @@ body {
 a {
   text-decoration: none; }
 
-body {
-  overflow-x: hidden !important; }
-
-.container {
-  max-width: 100% !important; }
-
 @media screen and (max-width: 667px) {
   body {
     overflow-x: hidden !important; }
@@ -444,8 +438,9 @@ button {
   background-size: 50% 100%; }
   @media all and (max-width: 880px) {
     .main__wrapper {
-      background-image: url(./../images/backg-daptive.svg);
+      background-image: url(./../images/backg-adaptive.svg);
       background-size: 100% 50%;
+      background-position: bottom;
       margin-top: -60px; } }
 
 .main__block {
@@ -1196,6 +1191,9 @@ input::placeholder {
 .request__form_second {
   display: flex; }
 
+.mobile__wrap {
+  font-family: 'Nunito Sans'; }
+
 .service__title {
   padding-top: 140px;
   max-width: 596px;
@@ -1502,6 +1500,9 @@ details > summary::-webkit-details-marker {
       font-weight: 400;
       line-height: 22px;
       color: #121212; } }
+
+.qualities__wrapper {
+  margin: 0 auto; }
 
 .certificates__wrapper_left {
   max-width: 496px;
