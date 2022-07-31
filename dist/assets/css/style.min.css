@@ -350,6 +350,9 @@ body {
 a {
   text-decoration: none; }
 
+button:hover {
+  opacity: 0.9; }
+
 @media screen and (max-width: 667px) {
   body {
     overflow-x: hidden !important; }
@@ -439,7 +442,7 @@ button {
   @media all and (max-width: 880px) {
     .main__wrapper {
       background-image: url(./../images/backg-adaptive.svg);
-      background-size: 100% 50%;
+      background-size: 100% 60%;
       background-position: bottom;
       margin-top: -60px; } }
 
@@ -462,6 +465,9 @@ button {
   height: 50px;
   padding-left: 22px;
   position: relative; }
+  @media all and (max-width: 880px) {
+    .main__button {
+      margin-bottom: 61px; } }
 
 .main__button::before {
   content: "";
@@ -585,6 +591,14 @@ button {
     font-weight: 700;
     line-height: 22px;
     color: #FFFFFF; }
+  .nav__link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #272674;
+    font-family: 'Roboto'; }
+  .nav__link:hover {
+    opacity: 0.9; }
   .nav__list {
     display: flex;
     align-items: center; }
@@ -781,6 +795,15 @@ input::placeholder {
   font-weight: 800;
   line-height: 49px;
   color: #121212; }
+  @media all and (max-width: 880px) {
+    .benefits__title {
+      padding-top: 16px; } }
+  @media all and (max-width: 680px) {
+    .benefits__title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      color: #121212; } }
 
 .benefits__text {
   font-size: 20px;

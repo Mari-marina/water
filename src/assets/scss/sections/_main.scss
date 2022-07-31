@@ -37,7 +37,7 @@
     background-size: 50% 100%;
     @media all and (max-width: 880px) {
       background-image: url(./../images/backg-adaptive.svg);
-      background-size: 100% 50%;
+      background-size: 100% 60%;
       background-position: bottom;
       margin-top: -60px;
     }
@@ -58,6 +58,9 @@
     height: 50px;
     padding-left: 22px;
     position: relative;
+    @media all and (max-width: 880px) {
+      margin-bottom: 61px;
+    }
   }
   &__button::before {
     content: "";
