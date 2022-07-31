@@ -14,14 +14,19 @@
   &__wrap {
     display: flex;
     align-items: center;
+    margin: 10px;
   }
-  &__wrap:not(:last-child) {
-    margin-bottom: 66px;
+  &__wrap:first-child,
+  &__wrap:nth-child(2) {
+    @media all and (max-width: 600px) {
+      margin-bottom: 68px;
+    }
   }
+  
   &__wrapper {
     display: flex;
     justify-content: space-around;
-    margin-top: 41px;
+    margin-top: 31px;
     @media all and (max-width: 900px) {
       flex-wrap: wrap;
     }

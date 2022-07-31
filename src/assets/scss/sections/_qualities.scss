@@ -3,6 +3,9 @@
 .qualities {
   &__title {
     padding: 165px 0 68px;
+    @media all and (max-width: 600px) {
+      padding: 161px 0 54px;
+    }
   }
   &__block {
     max-width: 290px;
@@ -13,15 +16,41 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    @media all and (max-width: 1300px) {
+      margin: 10px;
+    }
+    @media all and (max-width: 620px) {
+      margin: 0px;
+    }
+  }
+  &__wrap:not(:first-child) {
+    @media all and (max-width: 636px) {
+      padding-top: 50px;
+    }
+    
   }
   &__blocks {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media all and (max-width: 1300px) {
+      justify-content: space-around;
+    }
+    @media all and (max-width: 636px) {
+      padding-top: 50px;
+    }
   }
   &__subtitle {
     @include text(24px, 700, 32px, #121212);
+    margin-top: 10px;
+    @media all and (max-width: 636px) {
+      @include text(18px, 700, 25px, #121212);
+    }
   }
   &__text {
     @include text(16px, 400, 22px, #121212);
+    @media all and (max-width: 636px) {
+      @include text(16px, 400, 22px, #121212);
+    }
   }
 }
