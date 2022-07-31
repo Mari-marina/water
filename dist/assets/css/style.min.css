@@ -350,6 +350,18 @@ body {
 a {
   text-decoration: none; }
 
+body {
+  overflow-x: hidden !important; }
+
+.container {
+  max-width: 100% !important; }
+
+@media screen and (max-width: 667px) {
+  body {
+    overflow-x: hidden !important; }
+  .container {
+    max-width: 100% !important; } }
+
 h2 {
   font-family: 'Nunito Sans';
   font-size: 36px;
@@ -545,7 +557,8 @@ button {
       -webkit-transition: transform 0.5s ease;
       -moz-transition: transform 0.5s ease;
       -ms-transition: transform 0.5s ease;
-      -o-transition: transform 0.5s ease; } }
+      -o-transition: transform 0.5s ease;
+      z-index: 10; } }
   .nav.active {
     transform: translateX(0);
     -webkit-transform: translateX(0);
@@ -1525,11 +1538,12 @@ details > summary::-webkit-details-marker {
   margin-bottom: 29px; }
 
 .certificates__btn {
-  width: 309px;
+  max-width: 309px;
   height: 60px;
   background: #FFFFFF;
   border-radius: 42px;
-  color: #121212; }
+  color: #121212;
+  width: 100%; }
 
 .certificates__wrapper_left {
   padding: 56px 20px 54px 94px; }

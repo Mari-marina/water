@@ -34,11 +34,12 @@
 
   }
   &__btn {
-    width: 309px;
+    max-width: 309px;
     height: 60px;
     background: #FFFFFF;
     border-radius: 42px;
     color: #121212;
+    width: 100%;
   }
   &__wrapper_left {
     padding: 56px 20px 54px 94px;

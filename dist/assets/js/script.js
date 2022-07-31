@@ -5,13 +5,14 @@
 
 const button = document.querySelector(".burger");
 let menu = document.querySelector(".nav");
+let navigation = document.querySelector(".nav__list");
 let burgerButton = document.querySelector(".burger");
 
 button.addEventListener("click", function () {
   menu.classList.toggle("active");
 });
 
-menu.addEventListener("click", function () {
+navigation.addEventListener("click", function () {
   menu.classList.toggle("active");
 });
 
