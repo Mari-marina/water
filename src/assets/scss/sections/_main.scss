@@ -18,6 +18,7 @@
     @media all and (max-width: 880px) {
       left: 0;
       top: 33px;
+      position: inherit;
     }
   }
   &__wrap {
@@ -45,6 +46,9 @@
   &__block {
     display: flex;
     justify-content: center;
+    @media all and (max-width: 980px) {
+      margin-top: 60px;
+    }
     @media all and (max-width: 880px) {
       justify-content: center;
       flex-direction: column-reverse;
@@ -102,3 +106,4 @@
     }
   }
 }
+
