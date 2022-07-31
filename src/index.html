@@ -16,14 +16,14 @@
 <body>
     <main class="main">
         <div class="container">
-            <header class="header">
+            <header class="header" id="top">
                 <div class="header__nav nav">
                     <img class="logo" src="./assets/images/logo.svg" alt="logo">
                     <ul class="nav__list">
-                        <li class="nav__item">Новым клиентам</li>
-                        <li class="nav__item">Преимущества</li>
-                        <li class="nav__item">Aкции</li>
-                        <li class="nav__item">Вопросы</li>
+                        <li class="nav__item"> <a class="nav__link" href="#discounts">Новым клиентам</a></li>
+                        <li class="nav__item"> <a class="nav__link" href="#benefits">Преимущества</a> </li>
+                        <li class="nav__item"> <a class="nav__link" href="#discounts">Aкции</a> </li>
+                        <li class="nav__item"> <a class="nav__link" href="#questions">Вопросы</a> </li>
                         <li class="nav__item">
                             <div class="nav__wrap-tel">
                                 <img class="nav__icon-tel" src="./assets/images/phone.svg" alt="">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </main>
-    <section class="benefits">
+    <section class="benefits" id="benefits">
         <div class="container">
             <h2 class="benefits__title">ПОЧЕМУ СТОИТ ВЫБРАТЬ ВОДУ EDEN</h2>
             <p class="benefits__text">В основе нашего производства - качество воды и технологичность процессов</p>
@@ -83,7 +83,7 @@
             </div>
         </div>
     </section>
-    <section class="discounts">
+    <section class="discounts" id="discounts">
         <div class="container_second">
             <h2 class="discounts__title">ЕЩЕ БОЛЬШЕ ВЫГОДЫ ДЛЯ НОВЫХ КЛИЕНТОВ</h2>
             <div class="discounts__blocks">
@@ -269,7 +269,7 @@
             </div>
         </div>
     </section>
-    <section class="questions">
+    <section class="questions" id="questions">
         <div class="container">
             <h2 class="questions__title">
                 ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
@@ -432,7 +432,7 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__wrap">
-                    <img src="./assets/images/logo.svg" alt="" class="footer__logo">
+                    <a href="#top"><img src="./assets/images/logo.svg" alt="" class="footer__logo"></a>
                     <p class="footer__text">© Eden Springs 2022г.</p>
                     <a href="#" class="footer__link">Политика конфиденциальности</a>
                 </div>

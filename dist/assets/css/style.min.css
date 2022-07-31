@@ -347,6 +347,9 @@ body {
   margin: 0 auto;
   padding: 0 5px; }
 
+a {
+  text-decoration: none; }
+
 h2 {
   font-family: 'Nunito Sans';
   font-size: 36px;
@@ -1562,7 +1565,8 @@ details > summary::-webkit-details-marker {
         padding: 22px 35px 45px; } }
   .footer__link {
     text-decoration: none;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    margin-top: 5px; }
   .footer__list_center {
     text-align: center;
     padding-top: 36px; }
@@ -1585,6 +1589,8 @@ details > summary::-webkit-details-marker {
   @media all and (max-width: 1300px) {
     .footer__wrap {
       padding: 10px; } }
+  .footer__text {
+    margin-bottom: 5px; }
 
 /* Slider */
 .slick-slider {
