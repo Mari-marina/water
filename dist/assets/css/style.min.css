@@ -695,6 +695,11 @@ button {
   color: #272674;
   font-family: 'Nunito Sans';
   margin-top: 80px; }
+  @media all and (max-width: 450px) {
+    .production__subtitle {
+      max-width: 330px;
+      width: 100%;
+      margin: 0 auto; } }
 
 .production__text_bottom {
   font-size: 16px;
@@ -702,6 +707,13 @@ button {
   line-height: 22px;
   color: #000000;
   margin: 13px 0 25px; }
+  @media all and (max-width: 450px) {
+    .production__text_bottom {
+      padding: 27px 0 41px;
+      max-width: 330px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; } }
 
 .production__input {
   border: 1.5px solid #121212;
@@ -712,6 +724,9 @@ button {
   color: #121212;
   text-align: center;
   margin-right: 10px; }
+  @media all and (max-width: 900px) {
+    .production__input {
+      margin-bottom: 20px; } }
 
 .production__btn {
   width: 250px;
@@ -734,8 +749,13 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between; }
+  @media all and (max-width: 900px) {
+    .production__form {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
-.production__inpu > input::placeholder {
+input::placeholder {
   opacity: 0.5;
   font-size: 16px;
   font-weight: 400;

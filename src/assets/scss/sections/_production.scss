@@ -57,10 +57,22 @@
     @include text(24px, 700, 32px, #272674);
     font-family: 'Nunito Sans';
     margin-top: 80px;
+    @media all and (max-width: 450px) {
+      max-width: 330px;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
   &__text_bottom {
     @include text(16px, 400, 22px, #000000);
     margin: 13px 0 25px;
+    @media all and (max-width: 450px) {
+      padding: 27px 0 41px;
+      max-width: 330px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
   &__input {
     border: 1.5px solid #121212;
@@ -71,6 +83,9 @@ background: #FFFFFF;
 color: #121212;
 text-align: center;
 margin-right: 10px;
+@media all and (max-width: 900px) {
+  margin-bottom: 20px;
+}
   }
   &__btn{
     width: 250px;
@@ -93,9 +108,14 @@ margin-right: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @media all and (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
-.production__inpu>input::placeholder {
+input::placeholder {
   opacity: 0.5;
   @include text(16px, 400, 22px, #121212);
   font-family: 'Nunito Sans';
