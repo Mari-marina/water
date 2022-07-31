@@ -1291,6 +1291,11 @@ input::placeholder {
     .wave_background {
       background-image: none; } }
 
+.wave__background_second {
+  background-image: url(./../images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
 .service__title {
   padding-top: 140px;
   max-width: 596px;
