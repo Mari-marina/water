@@ -1140,7 +1140,8 @@ input::placeholder {
   color: #FFFFFF; }
   @media all and (max-width: 950px) {
     .request__title {
-      padding-top: 81px; } }
+      padding-top: 81px;
+      color: #24265B; } }
 
 .request__input {
   border: 1.5px solid #FFFFFF;
