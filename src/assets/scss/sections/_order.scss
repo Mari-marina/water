@@ -3,7 +3,14 @@
 .order {
   &__title {
     padding: 226px 0 36px;
+    @media all and (max-width: 900px) {
+      padding: 169px 0 26px;
+    }
+    @media all and (max-width: 450px) {
+      padding-bottom: 26px;
+    }
   }
+ 
   &__input {
     border: 1.5px solid #FFFFFF;
 border-radius: 42px;
@@ -12,14 +19,33 @@ height: 50px;
 background: #2271C5;
 color: #FFFFFF;
 text-align: center;
+margin-right: 8px;
+@media all and (max-width: 900px) {
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 450px) {
+  height: 46px;
+}
   }
-  &__btn{
+
+  &__btn,
+  &__btn_second{ 
     width: 250px;
     height: 50px;
     background: #F1A039;
     padding-left: 22px;
     position: relative;
+    @media all and (max-width: 900px) {
+      max-width: 188px;
+      width: 100%;
+    }
+    @media all and (max-width: 450px) {
+      height: 46px;
+    }
   }
+  &__btn_second::before,
   &__btn::before {
     content: "";
     position: absolute;
@@ -29,6 +55,24 @@ text-align: center;
     top: 4px;
     left: 4px;
   }
+  &__btn {
+    @media all and (max-width: 900px) {
+      display: none;
+    }
+  }
+  &__btn_second {
+    display: none;
+    @media all and (max-width: 900px) {
+      display: block;
+    }
+  }
+  &__wrapper {
+    @media all and (max-width: 900px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
   &__form_first {
     max-width: 916px;
     width: 100%;
@@ -36,6 +80,13 @@ text-align: center;
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 36px;
+    @media all and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media all and (max-width: 450px) {
+      padding-top: 0;
+    }
   }
   &__form_second {
     display: flex;
@@ -43,9 +94,21 @@ text-align: center;
     margin-right: 75px;
     margin: 0 auto;
     padding-top: 32px;
+    @media all and (max-width: 900px) {
+      max-width: 450px;
+      width: 100%;
+      margin-bottom: 34px;
+    }
+    @media all and (max-width: 450px) {
+      padding-top: 4px;
+    }
   }
   &__radioButton {
     margin-right: 14px;
   }
-  
+  &__form__text {
+    @media all and (max-width: 450px) {
+      @include text(12px, 400, 16px, #272E59);
+    }
+  }
 }

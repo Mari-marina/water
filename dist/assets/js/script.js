@@ -12,4 +12,10 @@ button.addEventListener("click", function () {
 });
 
 
+const line = document.querySelector(".questions__wrap");
+let details = document.querySelector(".questions__summary");
+
+details.addEventListener("click", function () {
+  line.classList.toggle("active_wrap");
+});
 //# sourceMappingURL=script.js.map
