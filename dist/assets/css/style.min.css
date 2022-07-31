@@ -640,11 +640,14 @@ button {
   width: 100%;
   margin: 0 auto;
   padding-top: 184px; }
+  @media all and (max-width: 900px) {
+    .production__title {
+      padding-top: 126px; } }
 
 .production__subtitle_orange {
   font-size: 48px;
   font-weight: 800;
-  line-height: 65px;
+  line-height: 64px;
   color: #F1A039;
   font-family: 'Nunito Sans'; }
 
@@ -655,6 +658,12 @@ button {
   color: #272674;
   width: 100%;
   text-align: center; }
+  @media all and (max-width: 900px) {
+    .production__text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #272674; } }
 
 .production__text_left {
   max-width: 270px; }
@@ -673,7 +682,11 @@ button {
   justify-content: space-between;
   max-width: 1085px;
   margin: 0 auto;
-  padding-top: 40px; }
+  padding-top: 40px;
+  flex-wrap: wrap; }
+  @media all and (max-width: 1100px) {
+    .production__wrapper {
+      justify-content: space-around; } }
 
 .production__subtitle {
   font-size: 24px;
