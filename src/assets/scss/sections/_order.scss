@@ -2,6 +2,7 @@
 
 .order {
   &__title {
+    color: #FFFFFF;;
     padding: 226px 0 36px;
     @media all and (max-width: 900px) {
       padding: 169px 0 26px;
@@ -10,7 +11,9 @@
       padding-bottom: 26px;
     }
   }
- 
+ &__form__text {
+  color: #FFFFFF;
+ }
   &__input {
     border: 1.5px solid #FFFFFF;
 border-radius: 42px;
@@ -108,7 +111,7 @@ margin-right: 8px;
   }
   &__form__text {
     @media all and (max-width: 450px) {
-      @include text(12px, 400, 16px, #272E59);
+      @include text(12px, 400, 16px, #FFFFFF);
     }
   }
 }

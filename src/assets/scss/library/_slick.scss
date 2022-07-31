@@ -98,3 +98,7 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-next:before {
+    background: url(./../images/arrow-slider.svg) no-repeat center;
+}

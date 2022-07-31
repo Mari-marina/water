@@ -1003,13 +1003,13 @@ input::placeholder {
   background: #272963;
   display: flex;
   justify-content: flex-end;
-  background-image: url(./../images/discounts/bottles.png);
+  background-image: url(./../images/bottles.svg);
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: 41% 100%; }
+  background-position: 15% -18%; }
   @media all and (max-width: 1240px) {
     .discounts__wrapper:first-child {
-      background-position: 20% 100%; } }
+      background-position: 20% -5%; } }
 
 .discounts__wrapper:nth-child(2) {
   background: #55B2F3;
@@ -1127,10 +1127,11 @@ input::placeholder {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  color: #121212; }
+  color: #FFFFFF; }
 
 .request__title {
-  padding-top: 140px; }
+  padding-top: 140px;
+  color: #FFFFFF; }
   @media all and (max-width: 950px) {
     .request__title {
       padding-top: 81px; } }
@@ -1153,6 +1154,9 @@ input::placeholder {
       border-radius: 38.3059px;
       margin: 10px;
       max-width: 360px; } }
+
+.request__form__text {
+  color: #FFFFFF; }
 
 .request__form_second, .request__form_second-mobile {
   display: flex;
@@ -1272,14 +1276,31 @@ input::placeholder {
 .mobile__wrap {
   font-family: 'Nunito Sans'; }
 
+.wave_background {
+  background-image: url(./../images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
 .service__title {
   padding-top: 140px;
   max-width: 596px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #fff; }
+
+.service__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #FFFFFF;
+  font-family: 'Nunito Sans'; }
+
+.service__text, .service__subtitle {
+  color: #fff;
+  margin-left: 20px; }
 
 .service__block {
-  max-width: 190px;
+  max-width: 193px;
   width: 100%; }
 
 .service__wrap {
@@ -1294,13 +1315,14 @@ input::placeholder {
 .service__wrapper {
   display: flex;
   justify-content: space-around;
-  margin-top: 31px; }
+  margin-top: 31px;
+  padding-bottom: 94px; }
   @media all and (max-width: 900px) {
     .service__wrapper {
       flex-wrap: wrap; } }
 
 .reviews__title {
-  padding: 240px 0 41px; }
+  padding: 146px 0 41px; }
 
 .reviews__wrapper {
   max-width: 400px;
@@ -1412,6 +1434,7 @@ details > summary::-webkit-details-marker {
   display: none; }
 
 .order__title {
+  color: #FFFFFF;
   padding: 226px 0 36px; }
   @media all and (max-width: 900px) {
     .order__title {
@@ -1419,6 +1442,9 @@ details > summary::-webkit-details-marker {
   @media all and (max-width: 450px) {
     .order__title {
       padding-bottom: 26px; } }
+
+.order__form__text {
+  color: #FFFFFF; }
 
 .order__input {
   border: 1.5px solid #FFFFFF;
@@ -1515,9 +1541,10 @@ details > summary::-webkit-details-marker {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    color: #272E59; } }
+    color: #FFFFFF; } }
 
 .qualities__title {
+  color: #FFFFFF;
   padding: 165px 0 68px; }
   @media all and (max-width: 600px) {
     .qualities__title {
@@ -1555,32 +1582,35 @@ details > summary::-webkit-details-marker {
       padding-top: 50px; } }
 
 .qualities__subtitle {
+  font-family: 'Nunito Sans';
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  color: #121212;
+  color: #FFFFFF;
   margin-top: 10px; }
   @media all and (max-width: 636px) {
     .qualities__subtitle {
       font-size: 18px;
       font-weight: 700;
       line-height: 25px;
-      color: #121212; } }
+      color: #FFFFFF; } }
 
 .qualities__text {
+  font-family: 'Nunito Sans';
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color: #121212; }
+  color: #FFFFFF; }
   @media all and (max-width: 636px) {
     .qualities__text {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
-      color: #121212; } }
+      color: #FFFFFF; } }
 
 .qualities__wrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 80px; }
 
 .certificates__wrapper_left {
   max-width: 496px;
@@ -1599,7 +1629,7 @@ details > summary::-webkit-details-marker {
   border-radius: 42px;
   display: flex;
   justify-content: space-between;
-  margin-top: 227px; }
+  margin-top: 147px; }
   @media all and (max-width: 1100px) {
     .certificates__wrapper {
       flex-direction: column-reverse;
@@ -1759,6 +1789,9 @@ details > summary::-webkit-details-marker {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.slick-next:before {
+  background: url(./../images/arrow-slider.svg) no-repeat center; }
 
 /* Slider */
 .slick-loading .slick-list {

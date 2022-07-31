@@ -24,13 +24,13 @@
     background: #272963;
     display: flex;
     justify-content: flex-end;
-    background-image: url(./../images/discounts/bottles.png);
+    background-image: url(./../images/bottles.svg);
     background-size: auto;
     background-repeat: no-repeat;
     // background-position: left bottom;
-    background-position: 41% 100%;
+    background-position: 15% -18%;
     @media all and (max-width: 1240px) {
-      background-position: 20% 100%;
+      background-position: 20% -5%;
     }
   }
   &__wrapper:nth-child(2) {
