@@ -407,6 +407,56 @@ button {
   background: #262A66;
   font-family: Nunito Sans; }
 
+.nav-toggle {
+  position: relative;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  margin: 7px 0;
+  top: 50%;
+  left: 50%;
+  /*
+   * FOR PRESENTATION ONLY
+   * Centers everything, remove for
+   * practical purposes.
+  */
+  transform: translate(-50%, -50%); }
+
+.nav-toggle:focus {
+  outline-width: 0; }
+
+.nav-toggle [class*='bar-'] {
+  background: #2D3074;
+  display: block;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+  /**ENLARGEDFORPRESENTATION*Keepthesevaluesatthesameproportion*forittolookcorrect*/
+  border-radius: 0px;
+  border-radius: 0px;
+  height: 6px;
+  width: 42px;
+  margin-bottom: 4px; }
+
+.nav-toggle .bar-bot {
+  margin-bottom: 0; }
+
+.opened .bar-top {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 15% 15%;
+  transform-origin: 15% 15%; }
+
+.opened .bar-mid {
+  opacity: 0; }
+
+.opened .bar-bot {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 15% 95%;
+  transform-origin: 15% 95%; }
+
 .main__image {
   overflow: hidden; }
   @media all and (max-width: 880px) {
@@ -650,7 +700,6 @@ button {
   position: fixed;
   right: 20px;
   top: 20px;
-  background: url(./../images/burger.svg) no-repeat center;
   cursor: pointer;
   transition: 0.2s;
   background-size: cover;
