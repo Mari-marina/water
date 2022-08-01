@@ -1797,7 +1797,12 @@ details > summary::-webkit-details-marker {
 
 .certificates__block__wrap {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
+  @media all and (max-width: 1100px) {
+    .certificates__block__wrap {
+      margin-left: 32px;
+      margin-top: 30px; } }
 
 .certificates__text {
   font-size: 18px;
@@ -2018,11 +2023,32 @@ details > summary::-webkit-details-marker {
 
 .certificates__slider .slick-prev {
   left: 944px;
-  top: 569px; }
+  top: 569px;
+  z-index: 1; }
+  @media all and (max-width: 1186px) {
+    .certificates__slider .slick-prev {
+      left: 856px; } }
+  @media all and (max-width: 1100px) {
+    .certificates__slider .slick-prev {
+      left: 40%;
+      top: 18%; } }
+  @media all and (max-width: 640px) {
+    .certificates__slider .slick-prev {
+      top: 6%; } }
+  @media all and (max-width: 640px) {
+    .certificates__slider .slick-prev {
+      left: 35%; } }
 
 .certificates__slider .slick-next {
   right: 132px;
   top: 569px; }
+  @media all and (max-width: 1100px) {
+    .certificates__slider .slick-next {
+      top: 18%;
+      right: 43%; } }
+  @media all and (max-width: 640px) {
+    .certificates__slider .slick-next {
+      top: 6%; } }
 
 .slick-initialized .slick-slide {
   display: flex; }

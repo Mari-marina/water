@@ -168,12 +168,34 @@
 .certificates__slider .slick-prev {
     left: 944px;
     top: 569px;
-   
+    z-index: 1;
+    @media all and (max-width: 1186px) {
+        left: 856px;
+    
+    }
+    @media all and (max-width: 1100px) {
+    left: 40%;
+    top: 18%;
+    }
+    @media all and (max-width: 640px) {
+        top: 6%; 
+        }
+        @media all and (max-width: 640px) {
+            left: 35%;
+            }
 }
 
 .certificates__slider .slick-next {
     right: 132px;
     top: 569px;
+    @media all and (max-width: 1100px) {
+        top: 18%;
+        right: 43%;
+        }
+        @media all and (max-width: 640px) {
+            top: 6%;
+            
+            }
     
 }
 

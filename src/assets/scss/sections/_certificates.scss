@@ -8,6 +8,7 @@
       max-width: 700px;
     }
   }
+  
   &__slider {
     max-width: 1160px;
     width: 100%;
@@ -36,6 +37,12 @@
   &__block__wrap {
     display: flex;
     align-items: center;
+    justify-content: center;
+    @media all and (max-width: 1100px) {
+      margin-left: 32px;
+      margin-top: 30px;
+    }
+    
   }
   &__text {
     @include text(18px, 400, 25px, #ffffff);
