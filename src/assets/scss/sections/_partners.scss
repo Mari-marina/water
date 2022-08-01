@@ -6,11 +6,34 @@
     color: #2D3074;
   }
   &__wrap {
-    max-width: 1186px;
+    // max-width: 1186px;
+    // width: 100%;
+    max-width: 100%;
+    margin: 0 80px;
+    // left: 28px;
+  }
+  // &__img {
+  //   margin: 0 0px;
+  // }
+  &__wrap__img {
+    max-width: 270px;
     width: 100%;
-    left: 28px;
+    @media all and (max-width: 560px) {
+      width: 240px;
+    }
   }
-  &__img {
-    margin: 0 40px;
+  &__wrap__images {
+    margin: 20px;
   }
+}
+.slider__wrapper {
+  max-width: 100%;
+  margin: 0 80px;
+  @media all and (max-width: 520px) {
+    margin: 0 23px;
+  }
+  // @media all and (max-width: 530px) {
+  //   margin: 0 0px;
+  // }
+
 }

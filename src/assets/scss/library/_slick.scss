@@ -2,7 +2,7 @@
 
 .slick-slider {
     position: relative;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -20,6 +20,7 @@
     display: block;
     margin: 0;
     padding: 0;
+    // max-height: 278px;
 
     &:focus {
         outline: none;
@@ -46,7 +47,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    display: flex;
     &:before,
     &:after {
         content: "";
@@ -131,14 +132,42 @@
     left: -66px;
     @media all and (max-width: 1236px)  {
         left: -46px;
+        
     }
+    @media all and (max-width: 556px)  {
+        top: 108%;
+    left: 38%;
+    }
+    
+
 }
 .partners__wrap .slick-next,
 .reviews__slider .slick-next {
     right: -28px;
     @media all and (max-width: 1236px)  {
         right: -17px;
+        
     }
+    @media all and (max-width: 556px)  {
+        
+        top: 108%;
+        right: 40%;
+    }
+}
+
+
+
+.partners__wrap .slick-next {
+    @media all and (max-width: 556px) {
+        left: 57%;
+    }
+
+}
+.partners__wrap .slick-prev {
+    @media all and (max-width: 556px) {
+        left: 33%;
+    }
+
 }
 
 .certificates__slider .slick-next:before {
@@ -203,5 +232,6 @@
     display: flex;
 }
 
-// max-width: 1160px;
-//     margin: 0 auto;
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;}

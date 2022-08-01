@@ -725,7 +725,7 @@ button {
     background: url(./../images/drop.svg) no-repeat center;
     width: 40px;
     height: 40px;
-    top: 4px;
+    top: 5px;
     left: 4px;
 }
 
@@ -1021,6 +1021,9 @@ button {
     max-width: 1159px;
     width: 100%;
     padding-top: 62px;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
 }
 
 .production__title {
@@ -1167,7 +1170,7 @@ button {
     background: url(./../images/dropOrange.svg) no-repeat center;
     width: 40px;
     height: 40px;
-    top: 4px;
+    top: 5px;
     left: 4px;
 }
 
@@ -2064,7 +2067,9 @@ input::placeholder {
 }
 
 .reviews__wrapper {
-    max-width: 400px;
+    margin: 0 20px;
+    min-width: 320px;
+    width: 100%;
     background: #55B2F3;
     border-radius: 42px;
 }
@@ -2075,7 +2080,6 @@ input::placeholder {
 
 .reviews__wrap {
     padding: 36px 30px;
-    margin: 0 30px;
 }
 
 .reviews__text_top {
@@ -2089,8 +2093,16 @@ input::placeholder {
 .reviews__slider {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.slider__wrapper {
+    max-width: 100%;
+    margin: 0 80px;
 }
 
 .partners__title {
@@ -2108,14 +2120,37 @@ input::placeholder {
     margin: 0 40px;
 }
 
+.partners__wrap__img {
+    max-width: 270px;
+    width: 100%;
+}
+
+.partners__wrap__images {
+    margin: 20px;
+}
+
+.slider__wrapper {
+    max-width: 100%;
+    margin: 0 80px;
+}
+
 .questions__title {
     padding: 113px 0 48px;
+    color: #2D3074;
 }
 
 @media all and (max-width: 600px) {
     .questions__title {
         padding: 90px 0 21px;
     }
+}
+
+.questions__details__text {
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #272E59;
 }
 
 .questions__img {
@@ -2147,9 +2182,17 @@ input::placeholder {
     }
 }
 
-@media all and (max-width: 420px) {
-    .questions__details__text {
-        padding: 8px 10px 10px 10px;
+.questions__details__text__wrap {
+    padding: 8px 10px 10px 10px;
+}
+
+.questions__wrapper {
+    margin-left: 30px;
+}
+
+@media all and (max-width: 1000px) {
+    .questions__wrapper {
+        margin-left: 0;
     }
 }
 
@@ -2322,7 +2365,7 @@ details > summary::-webkit-details-marker {
     background: url(./../images/dropOrange.svg) no-repeat center;
     width: 40px;
     height: 40px;
-    top: 4px;
+    top: 5px;
     left: 4px;
 }
 
@@ -2725,7 +2768,8 @@ details > summary::-webkit-details-marker {
 /* Slider */
 .slick-slider {
     position: relative;
-    display: block;
+    display: -ms-flexbox;
+    display: flex;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -2767,6 +2811,8 @@ details > summary::-webkit-details-marker {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .slick-track:before, .slick-track:after {
