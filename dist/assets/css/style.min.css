@@ -1095,7 +1095,7 @@ button {
   background-position: 15% -18%; }
   @media all and (max-width: 1240px) {
     .discounts__wrapper:first-child {
-      background-position: 20% -5%; } }
+      background-position: -24% 8%; } }
 
 .discounts__wrapper:nth-child(2) {
   background: #55B2F3;
@@ -1106,6 +1106,9 @@ button {
   background-repeat: no-repeat;
   background-size: 41%;
   margin: 0 12px; }
+  @media all and (max-width: 640px) {
+    .discounts__wrapper:nth-child(2) {
+      background-size: 55%; } }
 
 .discounts__wrapper:nth-child(3) {
   background: #2271C5;
