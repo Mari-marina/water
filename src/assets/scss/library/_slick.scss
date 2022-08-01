@@ -186,6 +186,21 @@
   -o-transform: rotate(180deg);
   margin-right: 20px;
 }
+.certificates__slider .slick-prev:before {
+  background: url(./../images/light-arrow.svg) no-repeat center;
+  background-size: contain;
+  height: 44px;
+  width: 44px;
+  opacity: 1;
+  display: block;
+  content: "";
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  margin-right: 20px;
+}
 
 .certificates__slider .slick-prev {
   left: 944px;
@@ -205,7 +220,14 @@
     left: 35%;
   }
 }
-
+.certificates__slider .slick-next:before {
+    background: url(./../images/light-arrow.svg) no-repeat center;
+    background-size: contain;
+    height: 44px;
+    width: 44px;
+    opacity: 1;
+    display: block;
+    content: "";}
 .certificates__slider .slick-next {
   right: 132px;
   top: 569px;
