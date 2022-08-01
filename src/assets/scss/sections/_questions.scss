@@ -29,9 +29,15 @@
     @media all and (max-width: 900px) {
       padding: 8px 30px 10px 30px;
         };
-        @media all and (max-width: 420px) {
+        &__wrap {
           padding: 8px 10px 10px 10px;
             };
+  }
+  &__wrapper {
+    margin-left: 30px;
+    @media all and (max-width: 1000px) {
+      margin-left: 0;
+        }
   }
   &__wrap {
     max-width: 1094px;
