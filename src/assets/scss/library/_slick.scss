@@ -126,21 +126,36 @@
   -o-transform: rotate(180deg);
   margin-right: 20px;
 }
+
 .partners__wrap .slick-prev,
 .reviews__slider .slick-prev {
   left: -66px;
-  @media all and (max-width: 1236px) {
-    left: -46px;
+  @media all and (max-width: 1440px) {
+    left: 45%;
+    top: 107%;
+  }
+  @media all and (max-width: 800px) {
+    left: 43%;
+  }
+  @media all and (max-width: 500px) {
+    left: 34%;
   }
 }
 .partners__wrap .slick-next,
 .reviews__slider .slick-next {
   right: -28px;
-  @media all and (max-width: 1236px) {
-    right: -17px;
+  @media all and (max-width: 1440px) {
+    right: 45%;
+    top: 107%;
+  }
+  @media all and (max-width: 800px) {
+    right: 43%;
+  }
+  @media all and (max-width: 500px) {
+    right: 40%;
   }
 }
-
+.partners__wrap .slick-next,
 .certificates__slider .slick-next:before {
   background: url(./../images/light-arrow.svg) no-repeat center;
   background-size: contain;

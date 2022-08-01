@@ -1,23 +1,30 @@
-@import './../variables/_mixins';
-
+@import "./../variables/_mixins";
+.con__spesh {
+  padding-bottom: 60px;
+  margin-bottom: -60px;
+}
 .reviews {
   &__title {
     padding: 146px 0 41px;
-    color: #2D3074;
+    color: #2d3074;
   }
   &__wrapper {
-    max-width: 400px;
-    background: #55B2F3;
+    margin: 0 20px;
+    width: 400px;
+    background: #55b2f3;
     border-radius: 42px;
   }
   &__text_top,
   &__text_bottom,
   &__span {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   &__wrap {
     padding: 36px 30px;
     margin: 0 30px;
+    @media (max-width: 638px) {
+      margin: 0;
+    }
   }
   &__text_top {
     margin-bottom: 15px;
