@@ -8,6 +8,10 @@
       padding: 90px 0 21px;
       };
   }
+  &__details__text {
+    font-family: 'Nunito Sans';
+    @include text(16px, 400, 20px, #272E59);
+  }
   &__img {
     margin-right: -30px;
     @media all and (max-width: 600px) {
