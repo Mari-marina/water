@@ -172,6 +172,9 @@ input::placeholder {
   background-size: 100% 100%;
   background-size: 1440px 100%;
   background-position-x: center;
+  @media all and (min-width: 1441px) {
+    background-size: 100% 100%;
+  }
     @media all and (max-width: 950px) {
       background-image: none;
      
@@ -181,14 +184,17 @@ input::placeholder {
 .wave__background_second {
   background-image: url(./../images/wave.svg);
   background-repeat: no-repeat;
-    
   background-size: 100% 100%;
   background-size: 1440px 100%;
   background-position-x: center;
+  @media all and (min-width: 1441px) {
+    background-size: 100% 100%;
+  }
   @media all and (max-width: 950px) {
     background-image: url(./../images/long-waves.svg);
     background-size: 100% 100%;
     
   }
+  
     
 }

@@ -1388,6 +1388,9 @@ input::placeholder {
   background-size: 100% 100%;
   background-size: 1440px 100%;
   background-position-x: center; }
+  @media all and (min-width: 1441px) {
+    .wave_background {
+      background-size: 100% 100%; } }
   @media all and (max-width: 950px) {
     .wave_background {
       background-image: none; } }
@@ -1398,6 +1401,9 @@ input::placeholder {
   background-size: 100% 100%;
   background-size: 1440px 100%;
   background-position-x: center; }
+  @media all and (min-width: 1441px) {
+    .wave__background_second {
+      background-size: 100% 100%; } }
   @media all and (max-width: 950px) {
     .wave__background_second {
       background-image: url(./../images/long-waves.svg);
@@ -1523,6 +1529,10 @@ input::placeholder {
   @media all and (max-width: 560px) {
     .partners__wrap__img {
       width: 240px; } }
+  @media all and (max-width: 400px) {
+    .partners__wrap__img {
+      max-width: 240px;
+      width: 100%; } }
 
 .partners__wrap__images {
   margin: 20px; }
