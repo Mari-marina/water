@@ -1451,7 +1451,8 @@ input::placeholder {
       background-size: 100% 100%; } }
 
 .reviews__title {
-  padding: 146px 0 41px; }
+  padding: 146px 0 41px;
+  color: #2D3074; }
 
 .reviews__wrapper {
   max-width: 400px;
@@ -1476,7 +1477,8 @@ input::placeholder {
   justify-content: space-between; }
 
 .partners__title {
-  padding: 80px 0 38px; }
+  padding: 80px 0 38px;
+  color: #2D3074; }
 
 .partners__wrap {
   max-width: 1186px;
@@ -1487,7 +1489,8 @@ input::placeholder {
   margin: 0 40px; }
 
 .questions__title {
-  padding: 113px 0 48px; }
+  padding: 113px 0 48px;
+  color: #2D3074; }
   @media all and (max-width: 600px) {
     .questions__title {
       padding: 90px 0 21px; } }

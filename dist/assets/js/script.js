@@ -28,12 +28,7 @@ toggle.addEventListener("click", function () {
   });
 })();
 
-// (function () {
-//   let navigation = document.querySelector(".nav__list");
-//   navigation.addEventListener('click', function(e) {
-//     this.classList.toggle('opened'); 
-//   });
-// })();
+
 
 
 let anchors = document.querySelectorAll('a[href*="#"]');
@@ -48,12 +43,6 @@ for (let anchor of anchors) {
   });
 }
 
-// const line = document.querySelector(".questions__wrap");
-// let details = document.querySelector(".questions__summary");
-
-// details.addEventListener("click", function () {
-//   line.classList.toggle("active_wrap");
-// });
 
 
 //# sourceMappingURL=script.js.map
