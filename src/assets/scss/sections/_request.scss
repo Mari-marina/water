@@ -5,6 +5,10 @@
     text-align: center;
     @include text(18px, 400, 22px, #FFFFFF);
   }
+  &__wrap {
+    max-width: 400px;
+    width: 100%;
+  }
   &__title {
     padding-top: 140px;
     color: #FFFFFF;
@@ -34,6 +38,7 @@ max-width: 360px;
   }
  &__form__text {
   color: #FFFFFF;
+  @include text(15px, 400, 14px, #FFFFFF);
  }
   &__form_second,
   &__form_second-mobile {
@@ -59,6 +64,10 @@ max-width: 360px;
     background: #272674;
     }
   }
+  &__form__text-mobile {
+    @include text(12px, 400, 16px, #272674);
+  }
+  
   &__btn::before {
     content: "";
     position: absolute;
@@ -159,7 +168,10 @@ input::placeholder {
 .wave_background {
   background-image: url(./../images/wave.svg);
   background-repeat: no-repeat;
-    background-size: 100% 100%;
+    
+  background-size: 100% 100%;
+  background-size: 1440px 100%;
+  background-position-x: center;
     @media all and (max-width: 950px) {
       background-image: none;
      
@@ -169,7 +181,14 @@ input::placeholder {
 .wave__background_second {
   background-image: url(./../images/wave.svg);
   background-repeat: no-repeat;
+    
+  background-size: 100% 100%;
+  background-size: 1440px 100%;
+  background-position-x: center;
+  @media all and (max-width: 950px) {
+    background-image: url(./../images/long-waves.svg);
     background-size: 100% 100%;
     
+  }
     
 }

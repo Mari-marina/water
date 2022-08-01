@@ -36,6 +36,11 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 14px;
+
+    details[open] &,
+    details > summary:focus & {
+      border-bottom: 2px solid transparent;
+    }
   }
   &__wrap:target {
     border-bottom: solid 2px #F1A039;
@@ -61,6 +66,7 @@ details > summary {
   align-items: center;
   max-width: 1160px;
   width: 100%;
+  border-radius: 20px;
   @media all and (max-width: 600px) {
     padding: 10px 20px;
   @include text(16px, 400, 22px, #272E59);
@@ -80,8 +86,8 @@ details[open] img {
 
 
 details > summary:focus {
-  border: solid 2px #F1A039;
-  border-radius: 20px;
+  outline: solid 2px #F1A039;
+
 }
 
   details > summary::-webkit-details-marker {

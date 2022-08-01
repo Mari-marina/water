@@ -48,12 +48,12 @@ for (let anchor of anchors) {
   });
 }
 
-const line = document.querySelector(".questions__wrap");
-let details = document.querySelector(".questions__summary");
+// const line = document.querySelector(".questions__wrap");
+// let details = document.querySelector(".questions__summary");
 
-details.addEventListener("click", function () {
-  line.classList.toggle("active_wrap");
-});
+// details.addEventListener("click", function () {
+//   line.classList.toggle("active_wrap");
+// });
 
 
 //# sourceMappingURL=script.js.map

@@ -58,6 +58,9 @@
   }
   &__wrapper {
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
+    @media all and (max-width: 640px) {
+      padding-bottom: 220px;
+    }
   }
 }

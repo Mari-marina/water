@@ -3,6 +3,9 @@
 .main {
   &__image {
     overflow: hidden;
+    @media all and (max-width: 980px) {
+      margin-top: 60px;
+    }
     @media all and (max-width: 880px) {
       overflow: inherit;
     }

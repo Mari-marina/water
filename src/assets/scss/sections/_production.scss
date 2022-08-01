@@ -115,7 +115,7 @@ margin-right: 10px;
     }
   }
 }
-input::placeholder {
+.production__input input::placeholder {
   opacity: 0.5;
   @include text(16px, 400, 22px, #121212);
   font-family: 'Nunito Sans';

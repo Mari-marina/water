@@ -11,10 +11,16 @@
     @media all and (max-width: 680px) {
       @include text(24px, 700, 32px, #121212);
     }
+    @media all and (min-width: 681px) {
+      TEXT-TRANSFORM: UPPERCASE;
+    }
   }
   &__text {
     @include text(20px, 700, 27px, #121212);
     text-align: center;
+    @media all and (max-width: 880px) {
+      @include text(16px, 400, 21px, #121212);
+    }
   }
   &__wrap {
     background: url(./../images/benefits/1.svg) no-repeat center;

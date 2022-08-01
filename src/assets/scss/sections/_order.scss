@@ -13,6 +13,11 @@
   }
  &__form__text {
   color: #FFFFFF;
+  @include text(15px, 400, 14px, #FFFFFF);
+  @media all and (max-width: 950px) {
+    @include text(12px, 400, 16px, #FFFFFF);
+  }
+  
  }
   &__input {
     border: 1.5px solid #FFFFFF;
