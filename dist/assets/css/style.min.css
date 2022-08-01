@@ -912,7 +912,7 @@ button {
       justify-content: center;
       align-items: center; } }
 
-.production__input input::placeholder {
+.production__input::placeholder {
   opacity: 0.5;
   font-size: 16px;
   font-weight: 400;
