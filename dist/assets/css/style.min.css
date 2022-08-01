@@ -788,7 +788,9 @@ button {
 .production__video {
   max-width: 1159px;
   width: 100%;
-  padding-top: 62px; }
+  padding-top: 62px;
+  display: flex;
+  margin: 0 auto; }
 
 .production__title {
   color: #272674;
