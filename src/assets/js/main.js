@@ -1,12 +1,8 @@
-
-
-
 const button = document.querySelector(".burger");
 let menu = document.querySelector(".nav");
 let navigation = document.querySelector(".nav__list");
 let burgerButton = document.querySelector(".burger");
-let toggle = document.querySelector('.nav-toggle');
-
+let toggle = document.querySelector(".nav-toggle");
 
 navigation.addEventListener("click", function () {
   toggle.classList.toggle("opened");
@@ -21,13 +17,10 @@ toggle.addEventListener("click", function () {
 });
 
 (function () {
-  toggle.addEventListener('click', function(e) {
-    this.classList.toggle('opened'); 
+  toggle.addEventListener("click", function (e) {
+    this.classList.toggle("opened");
   });
 })();
-
-
-
 
 let anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
@@ -40,5 +33,3 @@ for (let anchor of anchors) {
     });
   });
 }
-
-
