@@ -940,7 +940,7 @@ button {
       color: #121212; } }
   @media all and (min-width: 681px) {
     .benefits__title {
-      TEXT-TRANSFORM: UPPERCASE; } }
+      text-transform: UPPERCASE; } }
 
 .benefits__text {
   font-size: 20px;
@@ -974,7 +974,7 @@ button {
   font-size: 36px;
   font-weight: 800;
   line-height: 49px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   max-width: 322px;
   width: 100%;

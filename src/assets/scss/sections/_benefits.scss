@@ -1,4 +1,4 @@
-@import './../variables/_mixins';
+@import "./../variables/_mixins";
 
 .benefits {
   &__title {
@@ -12,7 +12,7 @@
       @include text(24px, 700, 32px, #121212);
     }
     @media all and (min-width: 681px) {
-      TEXT-TRANSFORM: UPPERCASE;
+      text-transform: UPPERCASE;
     }
   }
   &__text {
@@ -36,9 +36,9 @@
     @media all and (max-width: 1020px) {
       min-height: 100px;
     }
-}
+  }
   &__wrap__subtitle {
-    @include text(36px, 800, 49px, #FFFFFF);
+    @include text(36px, 800, 49px, #ffffff);
     text-align: center;
     max-width: 322px;
     width: 100%;
@@ -46,16 +46,16 @@
     border-radius: 42px;
     margin: 74px 8px;
     &::before {
-     position: absolute;
-     content: "";
-     background: url(./../images/Vector.svg) no-repeat center;
-    width: 40px;
-    height: 21px;
-    bottom: -30px;
-    left: 140px;
-    @media all and (max-width: 1020px) {
-      background: url(./../images/Vector-resp.svg) no-repeat center;
-    }
+      position: absolute;
+      content: "";
+      background: url(./../images/Vector.svg) no-repeat center;
+      width: 40px;
+      height: 21px;
+      bottom: -30px;
+      left: 140px;
+      @media all and (max-width: 1020px) {
+        background: url(./../images/Vector-resp.svg) no-repeat center;
+      }
     }
     @media all and (max-width: 1200px) {
       font-size: 24px;
