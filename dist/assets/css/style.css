@@ -421,6 +421,10 @@ label {
     font-family: 'Nunito Sans';
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h2 {
     font-family: 'Nunito Sans';
     font-size: 36px;
@@ -1963,11 +1967,97 @@ input::placeholder {
     font-family: 'Nunito Sans';
 }
 
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+  /*Всё, что вы сюда напишете, будет работать только с -webkit-*/
+    .wave_background {
+        background-image: url(./../images/wave.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-size: 1440px 100%;
+        background-position-x: center;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
+    .wave_background {
+        background-size: 100% 100%;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
+    .wave_background {
+        background-image: none;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+    .wave_background {
+        background-image: url(./../images/wave.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-size: 1440px 100%;
+        background-position-x: center;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
+    .wave_background {
+        background-size: 100% 100%;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
+    .wave_background {
+        background-image: none;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+    .wave__background_second {
+        background-image: url(./../images/wave.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-x: center;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
+    .wave__background_second {
+        background-size: 100% 100%;
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
+    .wave__background_second {
+        background-image: url(./../images/long-waves.svg);
+        background-size: 100% 100%;
+    }
+}
+
 .wave_background {
     background-image: url(./../images/wave.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-size: 1440px 100%;
+    background-position-x: center;
+}
+
+@media all and (min-width: 1441px) {
+    .wave_background {
+        background-size: 100% 100%;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .wave_background {
+        background-image: none;
+    }
+}
+
+.wave_background {
+    background-image: url(./../images/11111.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position-x: center;
 }
 
@@ -1977,19 +2067,14 @@ input::placeholder {
     }
 }
 
-.wave__background_second {
-    background-image: url(./../images/wave.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: 1440px 100%;
-    background-position-x: center;
-}
-
-@media all and (max-width: 950px) {
-    .wave__background_second {
-        background-image: url(./../images/long-waves.svg);
-        background-size: 100% 100%;
-    }
+.wave__background_second-img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    z-index: -1;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1400%;
 }
 
 .service__title {
@@ -2074,6 +2159,12 @@ input::placeholder {
     border-radius: 42px;
 }
 
+@media all and (max-width: 560px) {
+    .reviews__wrapper {
+        max-width: 320px;
+    }
+}
+
 .reviews__text_top, .reviews__text_bottom, .reviews__span {
     color: #FFFFFF;
 }
@@ -2082,12 +2173,34 @@ input::placeholder {
     padding: 36px 30px;
 }
 
+@media all and (max-width: 560px) {
+    .reviews__wrap {
+        padding: 26px 20px;
+    }
+}
+
 .reviews__text_top {
     margin-bottom: 15px;
 }
 
 .reviews__text_bottom {
     margin: 15px 0;
+}
+
+@media all and (max-width: 560px) {
+    .reviews__text_bottom {
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
+}
+
+.reviews__span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    color: #FFFFFF;
 }
 
 .reviews__slider {
@@ -2105,24 +2218,44 @@ input::placeholder {
     margin: 0 80px;
 }
 
+@media all and (max-width: 560px) {
+    .slider__wrapper {
+        margin: 0 20px;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .slider__wrapper {
+        margin: 0 0px;
+    }
+}
+
 .partners__title {
     padding: 80px 0 38px;
     color: #2D3074;
 }
 
 .partners__wrap {
-    max-width: 1186px;
-    width: 100%;
-    left: 28px;
-}
-
-.partners__img {
-    margin: 0 40px;
+    max-width: 100%;
+    margin: 0 80px;
 }
 
 .partners__wrap__img {
     max-width: 270px;
     width: 100%;
+}
+
+@media all and (max-width: 560px) {
+    .partners__wrap__img {
+        width: 240px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .partners__wrap__img {
+        max-width: 240px;
+        width: 100%;
+    }
 }
 
 .partners__wrap__images {
@@ -2132,6 +2265,12 @@ input::placeholder {
 .slider__wrapper {
     max-width: 100%;
     margin: 0 80px;
+}
+
+@media all and (max-width: 520px) {
+    .slider__wrapper {
+        margin: 0 23px;
+    }
 }
 
 .questions__title {
@@ -2160,8 +2299,8 @@ input::placeholder {
 @media all and (max-width: 600px) {
     .questions__img {
         margin-right: -15px;
-        width: 4px;
-        height: 8px;
+        width: 6px;
+        height: 10px;
     }
 }
 
@@ -2909,6 +3048,14 @@ details > summary::-webkit-details-marker {
     }
 }
 
+@media all and (max-width: 556px) {
+    .partners__wrap .slick-prev,
+    .reviews__slider .slick-prev {
+        top: 108%;
+        left: 38%;
+    }
+}
+
 .partners__wrap .slick-next,
 .reviews__slider .slick-next {
     right: -28px;
@@ -2918,6 +3065,26 @@ details > summary::-webkit-details-marker {
     .partners__wrap .slick-next,
     .reviews__slider .slick-next {
         right: -17px;
+    }
+}
+
+@media all and (max-width: 556px) {
+    .partners__wrap .slick-next,
+    .reviews__slider .slick-next {
+        top: 108%;
+        right: 40%;
+    }
+}
+
+@media all and (max-width: 556px) {
+    .partners__wrap .slick-next {
+        left: 57%;
+    }
+}
+
+@media all and (max-width: 556px) {
+    .partners__wrap .slick-prev {
+        left: 33%;
     }
 }
 
@@ -2999,6 +3166,13 @@ details > summary::-webkit-details-marker {
 .slick-initialized .slick-slide {
     display: -ms-flexbox;
     display: flex;
+}
+
+.slick-initialized .slick-slide {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 /* Slider */

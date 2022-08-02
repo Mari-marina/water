@@ -65,6 +65,10 @@
     height: 50px;
     padding-left: 22px;
     position: relative;
+    background: #262A66;
+    &:hover {
+      background: #F1A039;
+    }
     @media all and (max-width: 880px) {
       margin-bottom: 61px;
     }

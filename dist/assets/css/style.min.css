@@ -366,6 +366,11 @@ input {
 label {
   font-family: 'Nunito Sans'; }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 h2 {
   font-family: 'Nunito Sans';
   font-size: 36px;
@@ -457,7 +462,6 @@ button {
   color: #FFFFFF;
   border: none;
   cursor: pointer;
-  background: #262A66;
   font-family: Nunito Sans; }
 
 .nav-toggle {
@@ -575,7 +579,10 @@ button {
   width: 206px;
   height: 50px;
   padding-left: 22px;
-  position: relative; }
+  position: relative;
+  background: #262A66; }
+  .main__button:hover {
+    background: #F1A039; }
   @media all and (max-width: 880px) {
     .main__button {
       margin-bottom: 61px; } }
@@ -697,6 +704,7 @@ button {
   .nav__icon-tel {
     margin-right: 15px; }
   .nav__button {
+    background: #262A66;
     width: 179px;
     height: 40px;
     font-size: 16px;
@@ -970,33 +978,26 @@ button {
     .benefits__wrap {
       min-height: 100px; } }
 
-.benefits__wrap__subtitle {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 49px;
-  color: #FFFFFF;
-  text-align: center;
-  max-width: 322px;
+.benefits__button__wrap {
+  max-width: 330px;
   width: 100%;
-  position: relative;
-  border-radius: 42px;
-  margin: 74px 8px; }
-  .benefits__wrap__subtitle::before {
+  position: relative; }
+  .benefits__button__wrap::before {
     position: absolute;
     content: "";
     background: url(./../images/Vector.svg) no-repeat center;
     width: 40px;
     height: 21px;
     bottom: -30px;
-    left: 140px; }
+    left: 142px; }
     @media all and (max-width: 1020px) {
-      .benefits__wrap__subtitle::before {
+      .benefits__button__wrap::before {
         background: url(./../images/Vector-resp.svg) no-repeat center; } }
   @media all and (max-width: 1200px) {
-    .benefits__wrap__subtitle {
+    .benefits__button__wrap {
       font-size: 24px; } }
   @media all and (max-width: 1020px) {
-    .benefits__wrap__subtitle {
+    .benefits__button__wrap {
       margin: 25px 10px 50px;
       font-size: 18px; } }
 
@@ -1067,6 +1068,31 @@ button {
   @media all and (max-width: 1020px) {
     .benefits__wrap:nth-child(6) {
       grid-area: 6/1/7/4; } }
+
+.benefits__button::before {
+  content: attr(text);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 322px;
+  width: 100%;
+  position: relative;
+  border-radius: 42px;
+  margin: 74px 8px;
+  background: inherit;
+  background: none; }
+
+.benefits__button:hover::before {
+  content: attr(hover-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FFFFFF; }
+
+.benefits__button {
+  background: none; }
 
 .discounts__title {
   margin-top: 110px;
@@ -1382,6 +1408,49 @@ input::placeholder {
 .mobile__wrap {
   font-family: 'Nunito Sans'; }
 
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+  /*Всё, что вы сюда напишете, будет работать только с -webkit-*/
+  .wave_background {
+    background-image: url(./../images/wave.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: 1440px 100%;
+    background-position-x: center; } }
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
+    .wave_background {
+      background-size: 100% 100%; } }
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
+    .wave_background {
+      background-image: none; } }
+
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+  .wave_background {
+    background-image: url(./../images/wave.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: 1440px 100%;
+    background-position-x: center; } }
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
+    .wave_background {
+      background-size: 100% 100%; } }
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
+    .wave_background {
+      background-image: none; } }
+
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+  .wave__background_second {
+    background-image: url(./../images/wave.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-x: center; } }
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
+    .wave__background_second {
+      background-size: 100% 100%; } }
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
+    .wave__background_second {
+      background-image: url(./../images/long-waves.svg);
+      background-size: 100% 100%; } }
+
 .wave_background {
   background-image: url(./../images/wave.svg);
   background-repeat: no-repeat;
@@ -1395,19 +1464,28 @@ input::placeholder {
     .wave_background {
       background-image: none; } }
 
+.wave_background {
+  background-image: url(./../images/11111.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center; }
+  @media all and (max-width: 950px) {
+    .wave_background {
+      background-image: none; } }
+
 .wave__background_second {
   background-image: url(./../images/wave.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-size: 1440px 100%;
+  background-size: cover;
   background-position-x: center; }
   @media all and (min-width: 1441px) {
     .wave__background_second {
-      background-size: 100% 100%; } }
+      background-size: 100% 100%;
+      background-size: cover; } }
   @media all and (max-width: 950px) {
     .wave__background_second {
       background-image: url(./../images/long-waves.svg);
-      background-size: 100% 100%; } }
+      background-size: cover; } }
 
 .service__title {
   padding-top: 140px;

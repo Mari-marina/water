@@ -37,14 +37,16 @@
       min-height: 100px;
     }
 }
-  &__wrap__subtitle {
-    @include text(36px, 800, 49px, #FFFFFF);
-    text-align: center;
-    max-width: 322px;
+  &__button__wrap {
+    max-width: 330px;
     width: 100%;
+    // @include text(36px, 800, 49px, #FFFFFF);
+    // text-align: center;
+    // max-width: 322px;
+    // width: 100%;
     position: relative;
-    border-radius: 42px;
-    margin: 74px 8px;
+    // border-radius: 42px;
+    // margin: 74px 8px;
     &::before {
      position: absolute;
      content: "";
@@ -52,7 +54,7 @@
     width: 40px;
     height: 21px;
     bottom: -30px;
-    left: 140px;
+    left: 142px;
     @media all and (max-width: 1020px) {
       background: url(./../images/Vector-resp.svg) no-repeat center;
     }
@@ -133,4 +135,24 @@
       grid-area: 6/1/7/4;
     }
   }
+  &__button::before {
+    content: attr(text);
+    @include text(36px, 800, 49px, #FFFFFF);
+    text-align: center;
+    max-width: 322px;
+    width: 100%;
+    position: relative;
+    border-radius: 42px;
+    margin: 74px 8px;
+    background: inherit;
+    background: none;
+  }
+  &__button:hover::before {
+    content: attr(hover-text);
+    @include text(14px, 400, 22px, #FFFFFF);
+  }
+  &__button {
+    background: none;
+  }
 }
+
