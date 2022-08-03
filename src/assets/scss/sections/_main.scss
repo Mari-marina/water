@@ -49,6 +49,7 @@ body.lock {
     max-width: 50%;
     justify-content: center;
     @media all and (max-width: 880px) {
+      max-width: unset;
       align-items: center;
     }
   }
@@ -118,6 +119,8 @@ body.lock {
     @include text(42px, 800, 57px, #2d3074);
     @media all and (max-width: 620px) {
       @include text(22px, 900, 30px, #2d3074);
+
+
     }
   }
   &__title_small-blue {

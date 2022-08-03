@@ -51,6 +51,7 @@
   }
   &__text {
     font-family: 'Nunito Sans';
+    margin-top: 16px;
     @include text(16px, 400, 22px, #FFFFFF);
     @media all and (max-width: 636px) {
       @include text(16px, 400, 22px, #FFFFFF);

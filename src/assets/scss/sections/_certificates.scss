@@ -1,4 +1,4 @@
-@import './../variables/_mixins';
+@import "./../variables/_mixins";
 
 .certificates {
   &__wrapper_left {
@@ -8,7 +8,7 @@
       max-width: 700px;
     }
   }
-  
+
   &__slider {
     max-width: 1160px;
     width: 100%;
@@ -21,7 +21,7 @@
     margin-bottom: 20px;
   }
   &__wrapper {
-    background: #55B2F3;
+    background: #55b2f3;
     border-radius: 42px;
     display: flex;
     justify-content: space-between;
@@ -42,20 +42,28 @@
       margin-left: 32px;
       margin-top: 30px;
     }
-    
   }
   &__text {
     @include text(18px, 400, 25px, #ffffff);
     margin-bottom: 29px;
-
   }
   &__btn {
+    @media (max-width: 549px){
+       max-width: unset; 
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 309px;
     height: 60px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 42px;
     color: #121212;
     width: 100%;
+
+    border: none;
+    cursor: pointer;
+    font-family: Nunito Sans;
   }
   &__wrapper_left {
     padding: 56px 20px 54px 94px;

@@ -1,4 +1,4 @@
-@import './../variables/_mixins';
+@import "./../variables/_mixins";
 
 .service {
   &__title {
@@ -7,11 +7,12 @@
     width: 100%;
     margin: 0 auto;
     color: #fff;
-    
   }
   &__subtitle {
-    @include text(24px, 700, 33px, #FFFFFF);
-    font-family: 'Nunito Sans';
+    @include text(24px, 700, 25px, #ffffff);
+    font-family: "Nunito Sans";
+    margin-bottom: 10px;
+    white-space: nowrap;
   }
   &__text,
   &__subtitle {
@@ -33,7 +34,7 @@
       margin-bottom: 68px;
     }
   }
-  
+
   &__wrapper {
     display: flex;
     justify-content: space-around;
@@ -47,10 +48,9 @@
 .wave_backg {
   background-image: none;
   @media all and (max-width: 950px) {
-  display: block;
+    display: block;
     background-image: url(./../images/blue-wave.svg);
     background-repeat: no-repeat;
-      background-size: 100% 100%;
+    background-size: 100% 100%;
   }
-  
 }

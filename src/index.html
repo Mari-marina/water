@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <!-- Add the slick-theme.css if you want default styling -->
     <link
       rel="stylesheet"
@@ -379,7 +383,7 @@
                 <div class="service__block">
                   <h5 class="service__subtitle">Удобный сервис</h5>
                   <p class="service__text">
-                    подъем на этаж в квартиру или офис
+                    Подъем на этаж в квартиру или офис
                   </p>
                 </div>
               </div>
@@ -707,7 +711,8 @@
                 >
               </label>
             </form>
-            <button class="order__btn_second">Заказать Воду</button>
+            
+            <button class="production__btn">Заказать Воду</button>
           </div>
         </div>
       </section>
@@ -790,7 +795,13 @@
                 среды и гарантирует условия производства с минимальным влиянием
                 на экологию.
               </p>
-              <button class="certificates__btn">ОТКРЫТЬ СЕРТИФИКАТ</button>
+              <a
+                href="./assets/images/sert_1.png"
+                data-fancybox
+                class="certificates__btn"
+              >
+                ОТКРЫТЬ СЕРТИФИКАТ
+              </a>
             </div>
             <div class="certificates__wrapper_right">
               <div class="certificates__block">
@@ -819,7 +830,13 @@
                 среды и гарантирует условия производства с минимальным влиянием
                 на экологию.
               </p>
-              <button class="certificates__btn">ОТКРЫТЬ СЕРТИФИКАТ</button>
+              <a
+                href="./assets/images/sert_2.png"
+                data-fancybox
+                class="certificates__btn"
+              >
+                ОТКРЫТЬ СЕРТИФИКАТ
+              </a>
             </div>
             <div class="certificates__wrapper_right">
               <div class="certificates__block">
@@ -871,6 +888,8 @@
           src="./assets/video/production.mp4"
           poster="./assets/images/production.png"
           autoplay
+          muted
+          controls
         ></video>
         <div class="production__container">
           <h5 class="production__subtitle">
@@ -918,7 +937,7 @@
                   class="footer__link"
                   href="tel:+74951518763"
                   class="nav__phone"
-                  >+7 (495) 151-87-63</a
+                  >+7 (495) 023-1955</a
                 >
               </li>
               <li class="footer__item">
@@ -959,7 +978,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
         $(".reviews__slider").slick({
