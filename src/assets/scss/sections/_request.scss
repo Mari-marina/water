@@ -1,9 +1,9 @@
-@import './../variables/_mixins';
+@import "./../variables/_mixins";
 
 .request {
   &__text {
     text-align: center;
-    @include text(18px, 400, 22px, #FFFFFF);
+    @include text(18px, 400, 22px, #ffffff);
   }
   &__wrap {
     max-width: 400px;
@@ -11,38 +11,38 @@
   }
   &__title {
     padding-top: 140px;
-    color: #FFFFFF;
+    color: #ffffff;
     @media all and (max-width: 950px) {
       padding-top: 81px;
-      color: #24265B;
+      color: #24265b;
     }
   }
   &__input {
-    font-family: 'Nunito Sans';
+    font-family: "Nunito Sans";
     padding: 10px;
-    @include text(16px, 400, 22px, #FFFFFF);
-    border: 1.5px solid #FFFFFF;
-border-radius: 42px;
-max-width: 296px;
-width: 100%;
-height: 50px;
-background: #2271C5;
-color: #FFFFFF;
-text-align: center;
-margin-right: 10px;
-@media all and (max-width: 950px) {
-  background: rgba(255, 255, 255, 0.7);
-border: 0.912046px solid #272674;
-box-shadow: 0px 1.82409px 1.82409px 1.82409px rgba(204, 204, 204, 0.1);
-border-radius: 38.3059px;
-margin: 10px;
-max-width: 360px;
-}
+    @include text(16px, 400, 22px, #ffffff);
+    border: 1.5px solid #ffffff;
+    border-radius: 42px;
+    max-width: 296px;
+    width: 100%;
+    height: 50px;
+    background: #2271c5;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 10px;
+    @media all and (max-width: 950px) {
+      background: rgba(255, 255, 255, 0.7);
+      border: 0.912046px solid #272674;
+      box-shadow: 0px 1.82409px 1.82409px 1.82409px rgba(204, 204, 204, 0.1);
+      border-radius: 38.3059px;
+      margin: 10px;
+      max-width: 360px;
+    }
   }
- &__form__text {
-  color: #FFFFFF;
-  @include text(15px, 400, 14px, #FFFFFF);
- }
+  &__form__text {
+    color: #ffffff;
+    @include text(15px, 400, 14px, #ffffff);
+  }
   &__form_second,
   &__form_second-mobile {
     display: flex;
@@ -53,36 +53,36 @@ max-width: 360px;
       padding: 9px 0 19px;
       max-width: 300px;
       width: 100%;
-      }
+    }
   }
-  &__btn{
+  &__btn {
     max-width: 250px;
     width: 100%;
     height: 50px;
-    background: #F1A039;
+    background: #f1a039;
     padding-left: 22px;
     position: relative;
     &:hover::before {
       background: url(./../images/dropHover1.svg) no-repeat center;
     }
     &:hover {
-      background: #272674
+      background: #272674;
     }
     @media all and (max-width: 950px) {
-    max-width: 360px;
-    background: #272674;
-    &:hover::before {
-      background: url(./../images/dropHover2.svg) no-repeat center;
-    }
-    &:hover {
-      background: #F1A039;;
-    }
+      max-width: 360px;
+      background: #272674;
+      &:hover::before {
+        background: url(./../images/dropHover2.svg) no-repeat center;
+      }
+      &:hover {
+        background: #f1a039;
+      }
     }
   }
   &__form__text-mobile {
     @include text(12px, 400, 16px, #272674);
   }
-  
+
   &__btn::before {
     content: "";
     position: absolute;
@@ -93,15 +93,14 @@ max-width: 360px;
     left: 4px;
     @media all and (max-width: 950px) {
       background: url(./../images/drop.svg) no-repeat center;
-      }
-      
+    }
   }
   &__forms-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   &__form_first,
   &__form-mobile {
     max-width: 916px;
@@ -122,14 +121,22 @@ max-width: 360px;
       display: none;
     }
   }
-  &__form-mobile,
+  &__form-mobile {
+    display: none;
+  }
+  &__form-mobile.active {
+    @media all and (max-width: 950px) {
+      display: flex;
+    }
+  }
+
   .mobile {
     display: none;
     @media all and (max-width: 950px) {
       display: flex;
     }
   }
-  
+
   &__radioButton,
   &__radioButton-mobile {
     margin-right: 14px;
@@ -137,10 +144,10 @@ max-width: 360px;
 }
 input::placeholder {
   opacity: 0.5;
-  @include text(16px, 400, 22px, #FFFFFF);
-  font-family: 'Nunito Sans';
+  @include text(16px, 400, 22px, #ffffff);
+  font-family: "Nunito Sans";
   @media all and (max-width: 950px) {
-    color: #C4C4C4;
+    color: #c4c4c4;
   }
 }
 
@@ -152,8 +159,8 @@ input::placeholder {
     display: flex;
   }
   &__BTNtext:first-child {
-     margin-right: 20px;
-     position: relative;
+    margin-right: 20px;
+    position: relative;
   }
   &__BTNtext:first-child::after {
     content: "/";
@@ -164,56 +171,51 @@ input::placeholder {
     right: -10px;
   }
   &__BTNtext {
-    @include text(18px, 700, 24px, #8E98A8);
+    @include text(18px, 700, 24px, #8e98a8);
     background: inherit;
     cursor: pointer;
     margin-top: 10px;
-    
- }
- &__BTNtext:hover {
-  @include text(18px, 700, 24px, #272674);
-}
+  }
+  &__BTNtext:hover {
+    @include text(18px, 700, 24px, #272674);
+  }
 }
 .request__form_second {
   display: flex;
 }
 .mobile__wrap {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
-@media all and (-webkit-min-device-pixel-ratio:0) {
+@media all and (-webkit-min-device-pixel-ratio: 0) {
   /*Всё, что вы сюда напишете, будет работать только с -webkit-*/
   .wave_background {
     background-image: url(./../images/wave.svg);
     background-repeat: no-repeat;
-      
+
     background-size: 100% 100%;
     background-size: 1440px 100%;
     background-position-x: center;
     @media all and (min-width: 1441px) {
       background-size: 100% 100%;
     }
-      @media all and (max-width: 950px) {
-        background-image: none;
-       
-      }
-      
+    @media all and (max-width: 950px) {
+      background-image: none;
+    }
   }
   .wave_background {
     background-image: url(./../images/wave.svg);
     background-repeat: no-repeat;
-      
+
     background-size: 100% 100%;
     background-size: 1440px 100%;
     background-position-x: center;
     @media all and (min-width: 1441px) {
       background-size: 100% 100%;
     }
-      @media all and (max-width: 950px) {
-        background-image: none;
-       
-      }
-      
+    @media all and (max-width: 950px) {
+      background-image: none;
+    }
   }
   .wave__background_second {
     background-image: url(./../images/wave.svg);
@@ -227,44 +229,37 @@ input::placeholder {
     @media all and (max-width: 950px) {
       background-image: url(./../images/long-waves.svg);
       background-size: 100% 100%;
-      
     }
-    
-      
   }
-  }
+}
 
 .wave_background {
   background-image: url(./../images/wave.svg);
   background-repeat: no-repeat;
-    
+
   background-size: 100% 100%;
   background-size: 1440px 100%;
   background-position-x: center;
   @media all and (min-width: 1441px) {
     background-size: 100% 100%;
   }
-    @media all and (max-width: 950px) {
-      background-image: none;
-     
-    }
-    
+  @media all and (max-width: 950px) {
+    background-image: none;
+  }
 }
 .wave_background {
   background-image: url(./../images/11111.png);
   background-repeat: no-repeat;
-  // background-size: cover; 
+  // background-size: cover;
   background-size: 100% 100%;
   // background-size: 1440px 100%;
   background-position-x: center;
   @media all and (min-width: 1441px) {
     // background-size: 100% 100%;
   }
-    @media all and (max-width: 950px) {
-      background-image: none;
-     
-    }
-    
+  @media all and (max-width: 950px) {
+    background-image: none;
+  }
 }
 .wave__background_second {
   background-image: url(./../images/11111.png);
@@ -282,7 +277,7 @@ input::placeholder {
     background-image: url(./../images/long-waves.svg);
     background-size: 100% 100%;
     // background-size: cover;
-  } 
+  }
 }
 .wave__background_second-img {
   object-fit: contain;
@@ -291,5 +286,4 @@ input::placeholder {
   box-sizing: border-box;
   width: 100%;
   max-width: 1400%;
-
 }

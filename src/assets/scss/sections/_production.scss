@@ -1,12 +1,11 @@
-@import './../variables/_mixins';
-.production{
+@import "./../variables/_mixins";
+.production {
   &__video {
-   max-width: 1159px;
-   width: 100%;
-   padding-top: 62px;
-   display: flex;
-   margin: 0 auto;
-   border-radius: 42px;
+    max-width: 1159px;
+    width: 100%;
+    display: flex;
+    margin: 62px auto 0;
+    border-radius: 42px;
   }
   &__title,
   &__title_small {
@@ -21,8 +20,8 @@
     }
   }
   &__subtitle_orange {
-    @include text(48px, 800, 64px, #F1A039);
-    font-family: 'Nunito Sans';
+    @include text(48px, 800, 64px, #f1a039);
+    font-family: "Nunito Sans";
   }
   &__text {
     @include text(18px, 400, 25px, #272674);
@@ -61,7 +60,7 @@
   }
   &__subtitle {
     @include text(24px, 700, 32px, #272674);
-    font-family: 'Nunito Sans';
+    font-family: "Nunito Sans";
     margin-top: 80px;
     @media all and (max-width: 450px) {
       max-width: 330px;
@@ -84,17 +83,17 @@
     padding: 10px;
     @include text(16px, 400, 22px, #121212);
     border: 1.5px solid #121212;
-border-radius: 42px;
-width: 296px;
-height: 50px;
-background: #FFFFFF;
-text-align: center;
-margin-right: 10px;
-@media all and (max-width: 900px) {
-  margin-bottom: 20px;
-}
+    border-radius: 42px;
+    width: 296px;
+    height: 50px;
+    background: #ffffff;
+    text-align: center;
+    margin-right: 10px;
+    @media all and (max-width: 900px) {
+      margin-bottom: 20px;
+    }
   }
-  &__btn{
+  &__btn {
     &:hover::before {
       background: url(./../images/dropHover1.svg) no-repeat center;
     }
@@ -103,7 +102,7 @@ margin-right: 10px;
     }
     width: 250px;
     height: 50px;
-    background: #F1A039;
+    background: #f1a039;
     padding-left: 22px;
     position: relative;
   }
@@ -131,5 +130,5 @@ margin-right: 10px;
 .production__input::placeholder {
   opacity: 0.5;
   @include text(16px, 400, 22px, #121212);
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }

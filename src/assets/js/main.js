@@ -1,34 +1,3 @@
-
-
-
-const button = document.querySelector(".burger");
-let menu = document.querySelector(".nav");
-let navigation = document.querySelector(".nav__list");
-let burgerButton = document.querySelector(".burger");
-let toggle = document.querySelector('.nav-toggle');
-
-
-navigation.addEventListener("click", function () {
-  toggle.classList.toggle("opened");
-});
-
-navigation.addEventListener("click", function () {
-  menu.classList.toggle("active");
-});
-
-toggle.addEventListener("click", function () {
-  menu.classList.toggle("active");
-});
-
-(function () {
-  toggle.addEventListener('click', function(e) {
-    this.classList.toggle('opened'); 
-  });
-})();
-
-
-
-
 let anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (event) {
@@ -41,4 +10,23 @@ for (let anchor of anchors) {
   });
 }
 
+if (document.querySelector(".icon-menu")) {
+  document.querySelector(".icon-menu").addEventListener("click", function (e) {
+    document.querySelector("body").classList.toggle("lock");
+    document.documentElement.classList.toggle("menu-open");
+  });
+}
 
+const form1 = document.querySelector(".request__form-mobile");
+const form2 = document.querySelector(".request__form-mobile.two");
+const formBtn = document.querySelector(".mobile__BTNtext");
+const formBtn2 = document.querySelector(".mobile__BTNtext.two");
+
+formBtn.addEventListener("click", function (e) {
+  form2.classList.remove("active");
+  form1.classList.add("active");
+});
+formBtn2.addEventListener("click", function (e) {
+  form2.classList.add("active");
+  form1.classList.remove("active");
+});
