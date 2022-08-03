@@ -1,8 +1,8 @@
-@import './../variables/_mixins';
+@import "./../variables/_mixins";
 
 .order {
   &__title {
-    color: #FFFFFF;;
+    color: #ffffff;
     padding: 226px 0 36px;
     @media all and (max-width: 900px) {
       padding: 169px 0 26px;
@@ -11,39 +11,38 @@
       padding-bottom: 26px;
     }
   }
- &__form__text {
-  color: #FFFFFF;
-  @include text(15px, 400, 14px, #FFFFFF);
-  @media all and (max-width: 950px) {
-    @include text(12px, 400, 16px, #FFFFFF);
+  &__form__text {
+    color: #ffffff;
+    @include text(15px, 400, 14px, #ffffff);
+    @media all and (max-width: 950px) {
+      @include text(12px, 400, 16px, #ffffff);
+    }
   }
-  
- }
   &__input {
     padding: 10px;
-    border: 1.5px solid #FFFFFF;
-border-radius: 42px;
-width: 296px;
-height: 50px;
-background: #2271C5;
-color: #FFFFFF;
-text-align: center;
-margin-right: 8px;
-@media all and (max-width: 900px) {
-  max-width: 450px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-@media all and (max-width: 450px) {
-  height: 46px;
-}
+    border: 1.5px solid #ffffff;
+    border-radius: 42px;
+    width: 296px;
+    height: 50px;
+    background: #2271c5;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 8px;
+    @media all and (max-width: 900px) {
+      max-width: 450px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    @media all and (max-width: 450px) {
+      height: 46px;
+    }
   }
 
   &__btn,
-  &__btn_second{ 
+  &__btn_second {
     width: 250px;
     height: 50px;
-    background: #F1A039;
+    background: #f1a039;
     padding-left: 22px;
     position: relative;
     @media all and (max-width: 900px) {
@@ -108,7 +107,7 @@ margin-right: 8px;
   }
   &__form_second {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 75px;
     margin: 0 auto;
     padding-top: 32px;
@@ -127,9 +126,9 @@ margin-right: 8px;
     margin-right: 14px;
   }
   &__form__text {
-    @include text(16px, 400, 22px, #FFFFFF);
+    @include text(16px, 400, 22px, #ffffff);
     @media all and (max-width: 450px) {
-      @include text(12px, 400, 16px, #FFFFFF);
+      @include text(12px, 400, 16px, #ffffff);
     }
   }
 }
