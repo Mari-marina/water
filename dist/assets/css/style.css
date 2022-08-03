@@ -549,7 +549,6 @@ button {
     color: #FFFFFF;
     border: none;
     cursor: pointer;
-    background: #262A66;
     font-family: Nunito Sans;
 }
 
@@ -715,6 +714,11 @@ button {
     height: 50px;
     padding-left: 22px;
     position: relative;
+    background: #262A66;
+}
+
+.main__button:hover {
+    background: #F1A039;
 }
 
 @media all and (max-width: 880px) {
@@ -731,6 +735,10 @@ button {
     height: 40px;
     top: 5px;
     left: 4px;
+}
+
+.main__button:hover::before {
+    background: url(./../images/dropHover2.svg) no-repeat center;
 }
 
 @media all and (max-width: 880px) {
@@ -889,6 +897,7 @@ button {
 }
 
 .nav__button {
+    background: #262A66;
     width: 179px;
     height: 40px;
     font-size: 16px;
@@ -961,6 +970,15 @@ button {
     text-decoration: none;
 }
 
+@media all and (max-width: 1060px) {
+    .nav__phone {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 20px;
+        color: #272674;
+    }
+}
+
 .nav__span {
     font-size: 12px;
     font-weight: 400;
@@ -1028,9 +1046,13 @@ button {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
+    border-radius: 42px;
 }
 
-.production__title {
+.production__title, .production__title_small {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 49px;
     color: #272674;
     text-align: center;
     max-width: 1030px;
@@ -1040,7 +1062,7 @@ button {
 }
 
 @media all and (max-width: 900px) {
-    .production__title {
+    .production__title, .production__title_small {
         padding-top: 126px;
     }
 }
@@ -1072,11 +1094,15 @@ button {
 }
 
 .production__text_left {
-    max-width: 270px;
+    max-width: 300px;
 }
 
-.production__text_center, .production__text_right {
-    max-width: 215px;
+.production__text_center {
+    max-width: 225px;
+}
+
+.production__text_right {
+    max-width: 240px;
 }
 
 .production__wrap {
@@ -1144,12 +1170,16 @@ button {
 }
 
 .production__input {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #121212;
     border: 1.5px solid #121212;
     border-radius: 42px;
     width: 296px;
     height: 50px;
     background: #FFFFFF;
-    color: #121212;
     text-align: center;
     margin-right: 10px;
 }
@@ -1166,6 +1196,14 @@ button {
     background: #F1A039;
     padding-left: 22px;
     position: relative;
+}
+
+.production__btn:hover::before {
+    background: url(./../images/dropHover1.svg) no-repeat center;
+}
+
+.production__btn:hover {
+    background: #272674;
 }
 
 .production__btn::before {
@@ -1269,7 +1307,7 @@ button {
 
 @media all and (min-width: 681px) {
     .benefits__title {
-        TEXT-TRANSFORM: UPPERCASE;
+        text-transform: UPPERCASE;
     }
 }
 
@@ -1312,43 +1350,36 @@ button {
     }
 }
 
-.benefits__wrap__subtitle {
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 49px;
-    color: #FFFFFF;
-    text-align: center;
-    max-width: 322px;
+.benefits__button__wrap {
+    max-width: 330px;
     width: 100%;
     position: relative;
-    border-radius: 42px;
-    margin: 74px 8px;
 }
 
-.benefits__wrap__subtitle::before {
+.benefits__button__wrap::before {
     position: absolute;
     content: "";
     background: url(./../images/Vector.svg) no-repeat center;
     width: 40px;
     height: 21px;
     bottom: -30px;
-    left: 140px;
+    left: 142px;
 }
 
 @media all and (max-width: 1020px) {
-    .benefits__wrap__subtitle::before {
+    .benefits__button__wrap::before {
         background: url(./../images/Vector-resp.svg) no-repeat center;
     }
 }
 
 @media all and (max-width: 1200px) {
-    .benefits__wrap__subtitle {
+    .benefits__button__wrap {
         font-size: 24px;
     }
 }
 
 @media all and (max-width: 1020px) {
-    .benefits__wrap__subtitle {
+    .benefits__button__wrap {
         margin: 25px 10px 50px;
         font-size: 18px;
     }
@@ -1458,6 +1489,34 @@ button {
     }
 }
 
+.benefits__button::before {
+    content: attr(text);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 322px;
+    width: 100%;
+    position: relative;
+    border-radius: 42px;
+    margin: 74px 8px;
+    background: inherit;
+    background: none;
+}
+
+.benefits__button:hover::before {
+    content: attr(hover-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.benefits__button {
+    background: none;
+}
+
 .discounts__title {
     margin-top: 110px;
     text-align: center;
@@ -1531,6 +1590,12 @@ button {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 90% 100%;
+}
+
+@media all and (max-width: 440px) {
+    .discounts__wrapper:nth-child(3) {
+        background-size: 100%;
+    }
 }
 
 .discounts__wrap__subtitle, .discounts__wrap__text {
@@ -1702,6 +1767,12 @@ button {
 }
 
 .request__input {
+    font-family: 'Nunito Sans';
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #FFFFFF;
     border: 1.5px solid #FFFFFF;
     border-radius: 42px;
     max-width: 296px;
@@ -1758,10 +1829,26 @@ button {
     position: relative;
 }
 
+.request__btn:hover::before {
+    background: url(./../images/dropHover1.svg) no-repeat center;
+}
+
+.request__btn:hover {
+    background: #272674;
+}
+
 @media all and (max-width: 950px) {
     .request__btn {
         max-width: 360px;
         background: #272674;
+    }
+
+    .request__btn:hover::before {
+        background: url(./../images/dropHover2.svg) no-repeat center;
+    }
+
+    .request__btn:hover {
+        background: #F1A039;
     }
 }
 
@@ -2057,13 +2144,35 @@ input::placeholder {
 .wave_background {
     background-image: url(./../images/11111.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position-x: center;
 }
 
 @media all and (max-width: 950px) {
     .wave_background {
         background-image: none;
+    }
+}
+
+.wave__background_second {
+    background-image: url(./../images/11111.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: 1440px 100%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+@media all and (min-width: 1441px) {
+    .wave__background_second {
+        background-size: 100% 100%;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .wave__background_second {
+        background-image: url(./../images/long-waves.svg);
+        background-size: 100% 100%;
     }
 }
 
@@ -2171,6 +2280,7 @@ input::placeholder {
 
 .reviews__wrap {
     padding: 36px 30px;
+    height: 300px;
 }
 
 @media all and (max-width: 560px) {
@@ -2453,6 +2563,7 @@ details > summary::-webkit-details-marker {
 }
 
 .order__input {
+    padding: 10px;
     border: 1.5px solid #FFFFFF;
     border-radius: 42px;
     width: 296px;
@@ -2506,6 +2617,20 @@ details > summary::-webkit-details-marker {
     height: 40px;
     top: 5px;
     left: 4px;
+}
+
+@media all and (max-width: 450px) {
+    .order__btn_second::before, .order__btn::before {
+        top: 3px;
+    }
+}
+
+.order__btn:hover::before {
+    background: url(./../images/dropHover1.svg) no-repeat center;
+}
+
+.order__btn:hover {
+    background: #272674;
 }
 
 @media all and (max-width: 900px) {
@@ -2569,6 +2694,8 @@ details > summary::-webkit-details-marker {
     margin-right: 75px;
     margin: 0 auto;
     padding-top: 32px;
+    max-width: 1030px;
+    width: 100%;
 }
 
 @media all and (max-width: 900px) {
@@ -2587,6 +2714,13 @@ details > summary::-webkit-details-marker {
 
 .order__radioButton {
     margin-right: 14px;
+}
+
+.order__form__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #FFFFFF;
 }
 
 @media all and (max-width: 450px) {

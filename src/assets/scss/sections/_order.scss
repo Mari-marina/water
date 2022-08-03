@@ -20,6 +20,7 @@
   
  }
   &__input {
+    padding: 10px;
     border: 1.5px solid #FFFFFF;
 border-radius: 42px;
 width: 296px;
@@ -62,8 +63,17 @@ margin-right: 8px;
     height: 40px;
     top: 5px;
     left: 4px;
+    @media all and (max-width: 450px) {
+      top: 3px;
+    }
   }
   &__btn {
+    &:hover::before {
+      background: url(./../images/dropHover1.svg) no-repeat center;
+    }
+    &:hover {
+      background: #272674;
+    }
     @media all and (max-width: 900px) {
       display: none;
     }
@@ -102,6 +112,8 @@ margin-right: 8px;
     margin-right: 75px;
     margin: 0 auto;
     padding-top: 32px;
+    max-width: 1030px;
+    width: 100%;
     @media all and (max-width: 900px) {
       max-width: 450px;
       width: 100%;
@@ -115,6 +127,7 @@ margin-right: 8px;
     margin-right: 14px;
   }
   &__form__text {
+    @include text(16px, 400, 22px, #FFFFFF);
     @media all and (max-width: 450px) {
       @include text(12px, 400, 16px, #FFFFFF);
     }

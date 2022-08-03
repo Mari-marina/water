@@ -6,9 +6,11 @@
    padding-top: 62px;
    display: flex;
    margin: 0 auto;
+   border-radius: 42px;
   }
-  &__title {
-    color: #272674;
+  &__title,
+  &__title_small {
+    @include text(36px, 800, 49px, #272674);
     text-align: center;
     max-width: 1030px;
     width: 100%;
@@ -31,11 +33,13 @@
     }
   }
   &__text_left {
-    max-width: 270px;
+    max-width: 300px;
   }
-  &__text_center,
+  &__text_center {
+    max-width: 225px;
+  }
   &__text_right {
-    max-width: 215px;
+    max-width: 240px;
   }
 
   &__wrap {
@@ -77,12 +81,13 @@
     }
   }
   &__input {
+    padding: 10px;
+    @include text(16px, 400, 22px, #121212);
     border: 1.5px solid #121212;
 border-radius: 42px;
 width: 296px;
 height: 50px;
 background: #FFFFFF;
-color: #121212;
 text-align: center;
 margin-right: 10px;
 @media all and (max-width: 900px) {
@@ -90,6 +95,12 @@ margin-right: 10px;
 }
   }
   &__btn{
+    &:hover::before {
+      background: url(./../images/dropHover1.svg) no-repeat center;
+    }
+    &:hover {
+      background: #272674;
+    }
     width: 250px;
     height: 50px;
     background: #F1A039;

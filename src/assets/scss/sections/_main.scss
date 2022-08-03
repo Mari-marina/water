@@ -82,6 +82,9 @@
     top: 5px;
     left: 4px;
   }
+  &__button:hover::before {
+    background: url(./../images/dropHover2.svg) no-repeat center;
+  }
   &__title {
     @media all and (max-width: 880px) {
       text-align: center;

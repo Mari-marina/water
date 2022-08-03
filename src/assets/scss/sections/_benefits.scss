@@ -1,4 +1,4 @@
-@import './../variables/_mixins';
+@import "./../variables/_mixins";
 
 .benefits {
   &__title {
@@ -12,7 +12,7 @@
       @include text(24px, 700, 32px, #121212);
     }
     @media all and (min-width: 681px) {
-      TEXT-TRANSFORM: UPPERCASE;
+      text-transform: UPPERCASE;
     }
   }
   &__text {
@@ -40,13 +40,7 @@
   &__button__wrap {
     max-width: 330px;
     width: 100%;
-    // @include text(36px, 800, 49px, #FFFFFF);
-    // text-align: center;
-    // max-width: 322px;
-    // width: 100%;
     position: relative;
-    // border-radius: 42px;
-    // margin: 74px 8px;
     &::before {
      position: absolute;
      content: "";
@@ -149,7 +143,7 @@
   }
   &__button:hover::before {
     content: attr(hover-text);
-    @include text(14px, 400, 22px, #FFFFFF);
+    @include text(16px, 400, 22px, #FFFFFF);
   }
   &__button {
     background: none;

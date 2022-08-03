@@ -95,6 +95,9 @@ height: 40px;
   &__phone{
     @include text(16px, 900, 22px, #272674);
     text-decoration: none;
+    @media all and (max-width: 1060px) {
+      @include text(14px, 900, 20px, #272674);
+    }
   }
   &__span {
     @include text(12px, 400, 16px, #121212);

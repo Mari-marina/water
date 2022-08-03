@@ -18,6 +18,9 @@
     }
   }
   &__input {
+    font-family: 'Nunito Sans';
+    padding: 10px;
+    @include text(16px, 400, 22px, #FFFFFF);
     border: 1.5px solid #FFFFFF;
 border-radius: 42px;
 max-width: 296px;
@@ -59,9 +62,21 @@ max-width: 360px;
     background: #F1A039;
     padding-left: 22px;
     position: relative;
+    &:hover::before {
+      background: url(./../images/dropHover1.svg) no-repeat center;
+    }
+    &:hover {
+      background: #272674
+    }
     @media all and (max-width: 950px) {
     max-width: 360px;
     background: #272674;
+    &:hover::before {
+      background: url(./../images/dropHover2.svg) no-repeat center;
+    }
+    &:hover {
+      background: #F1A039;;
+    }
     }
   }
   &__form__text-mobile {
@@ -79,6 +94,7 @@ max-width: 360px;
     @media all and (max-width: 950px) {
       background: url(./../images/drop.svg) no-repeat center;
       }
+      
   }
   &__forms-mobile {
     display: flex;
@@ -237,8 +253,8 @@ input::placeholder {
 .wave_background {
   background-image: url(./../images/11111.png);
   background-repeat: no-repeat;
-  background-size: cover; 
-  // background-size: 100% 100%;
+  // background-size: cover; 
+  background-size: 100% 100%;
   // background-size: 1440px 100%;
   background-position-x: center;
   @media all and (min-width: 1441px) {
@@ -251,28 +267,29 @@ input::placeholder {
     
 }
 .wave__background_second {
-  background-image: url(./../images/wave.svg);
+  background-image: url(./../images/11111.png);
   background-repeat: no-repeat;
-  // background-size: 100% 100%;
-  background-size: cover;
-  // background-size: 1440px 100%;
+  background-size: 100% 100%;
+  // background-size: cover;
+  background-size: 1440px 100%;
   background-position-x: center;
+  background-position-y: center;
   @media all and (min-width: 1441px) {
     background-size: 100% 100%;
-    background-size: cover;
+    // background-size: cover;
   }
   @media all and (max-width: 950px) {
     background-image: url(./../images/long-waves.svg);
-    // background-size: 100% 100%;
-    background-size: cover;
+    background-size: 100% 100%;
+    // background-size: cover;
   } 
 }
-// .wave__background_second-img {
-//   object-fit: contain;
-//   z-index: -1;
-//   display: none;
-//   box-sizing: border-box;
-//   width: 100%;
-//   max-width: 1400%;
+.wave__background_second-img {
+  object-fit: contain;
+  z-index: -1;
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400%;
 
-// }
+}
